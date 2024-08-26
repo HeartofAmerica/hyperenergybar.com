@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const Subscribe = () => {
   const [email, setEmail] = useState<string>('');
-  const [location, setLocation] = useState<string>(''); // For MMERGE7
+  const [location, setLocation] = useState<string>('');
   const [status, setStatus] = useState<string>('');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -16,14 +16,14 @@ const Subscribe = () => {
         },
         body: JSON.stringify({ 
           email,
-          merge_fields: { MMERGE7: location } // Include MMERGE7 value
+          merge_fields: { MMERGE7: location }
         }),
       });
 
       if (response.ok) {
         setStatus('success');
         setEmail('');
-        setLocation(''); // Clear the location after successful submission
+        setLocation('');
       } else {
         setStatus('error');
       }
@@ -33,20 +33,20 @@ const Subscribe = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex items-center">
+    <form onSubmit={handleSubmit} className="block">
       <input
         type="email"
         placeholder="Enter your email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
-        className="obvi-input px-4 lg:px-6 py-2 lg:py-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-green bg-ltgreen"
+        className="obvi-input px-4 lg:px-6 py-2 lg:py-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-green bg-ltgreen block w-full mb-2"
       />
       <select
         value={location}
         onChange={(e) => setLocation(e.target.value)}
         required
-        className="obvi-input px-4 lg:px-6 py-2 lg:py-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-green bg-ltgreen"
+        className="obvi-xs text-green obvi-input px-4 lg:px-6 py-2 lg:py-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-green bg-ltgreen block w-full"
       >
         <option value="">Select a location</option>
         <option value="Altoona">Altoona</option>

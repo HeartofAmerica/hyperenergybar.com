@@ -37,6 +37,13 @@ h1, h2, h3, h4, h5 {
   font-weight: 900;
 }
 
+.obvi-xs {
+  font-family: "obviously", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 14px;
+}
+
 .obvi-sm {
   font-family: "obviously", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
   text-transform: uppercase;
