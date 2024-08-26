@@ -12,8 +12,8 @@ export default function Specials() {
           <h1 className="obvi-xl mb-5 lg:mb-10">
             Specials
           </h1>
-          <div className="max-w-screen-md mx-auto">
-            <p className="text-xl lg:text-2xl">
+          <div className="max-w-screen-sm mx-auto">
+            <p className="text-lg lg:text-2xl">
               Hyper-Infused Energy delivers a delicious burst of flavor alongside a powerful boost of energy and focus.<br/>
               *Caffeine-free substitute & sugar-free syrups available.
             </p>

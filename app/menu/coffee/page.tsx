@@ -7,13 +7,13 @@ export default function Coffee() {
   return (
     <>
       <Nav/>
-      <div className="pt-36 pb-5 lg:pt-44 lg:pb-10 bg-xltgreen">
+      <div className="pt-36 pb-10 lg:pt-44 lg:pb-10 bg-xltgreen">
         <div className="container max-w-screen-lg px-5 lg:px-10 text-center">
           <h1 className="obvi-xl mb-5 lg:mb-10">
             Coffee
           </h1>
           <div className="max-w-screen-md mx-auto">
-            <p className="text-xl lg:text-2xl">
+            <p className="text-lg lg:text-2xl">
               *Milk substitutes available
             </p>
           </div>

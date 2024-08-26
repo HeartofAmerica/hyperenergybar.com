@@ -7,13 +7,13 @@ export default function HyperInfusedEnergy() {
   return (
     <>
       <Nav/>
-      <div className="pt-36 pb-5 lg:pt-44 lg:pb-20 bg-xltgreen">
+      <div className="pt-36 pb-10 lg:pt-44 lg:pb-20 bg-xltgreen">
         <div className="container max-w-screen-lg px-5 lg:px-10 text-center">
           <h1 className="obvi-xl mb-5 lg:mb-10">
             Hyper-Infused Energy
           </h1>
           <div className="max-w-screen-sm mx-auto">
-            <p className="text-xl lg:text-2xl">
+            <p className="text-lg lg:text-2xl">
               Hyper-Infused Energy delivers a delicious burst of flavor alongside a powerful boost of energy and focus.<br/>
               *Caffeine-free substitute & sugar-free syrups available.
             </p>
