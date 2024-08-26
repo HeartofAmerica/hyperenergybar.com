@@ -12,7 +12,7 @@ export default function HyperInfusedEnergy() {
           <h1 className="obvi-xl mb-5 lg:mb-10">
             Hyper-Infused Energy
           </h1>
-          <div className="max-w-screen-md mx-auto">
+          <div className="max-w-screen-sm mx-auto">
             <p className="text-xl lg:text-2xl">
               Hyper-Infused Energy delivers a delicious burst of flavor alongside a powerful boost of energy and focus.<br/>
               *Caffeine-free substitute & sugar-free syrups available.
