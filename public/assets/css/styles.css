@@ -1,0 +1,342 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --green: #8bc8b6;
+  --ltgreen: #EFF4E1;
+  --xltgreen: #F7FAEE;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+body {
+  font-family: "work-sans", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+input:focus,
+input:valid {
+  outline: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "obviously", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.obvi-sm {
+  font-family: "obviously", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.obvi-md {
+  font-family: "obviously", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.obvi-lg {
+  font-family: "obviously", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 110%;
+}
+
+@media (min-width: 768px) {
+  .obvi-lg {
+    font-size: 64px;
+  }
+}
+
+.obvi-xl {
+  font-family: "obviously", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 110%;
+}
+
+@media (min-width: 768px) {
+  .obvi-xl {
+    font-size: 90px;
+  }
+}
+
+.underline-btn {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  font-family: "obviously", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.underline-btn::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  bottom: 0;
+  left: 50%;
+  transition: width 0.2s ease, left 0.2s ease;
+}
+
+.underline-btn:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.active .underline-btn::before,
+.active .underline-btn-lg::before {
+  width: 100%;
+  left: 0;
+}
+
+.active .card .underline-btn::before {
+  width: 0;
+  left: 50%;
+}
+
+.underline-btn-lg {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  font-family: "obviously", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.underline-btn-lg::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  bottom: 0;
+  left: 50%;
+  transition: width 0.2s ease, left 0.2s ease;
+}
+
+.underline-btn-lg:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.underline-btn-ltgreen-lg {
+  color: var(--ltgreen);
+  position: relative;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  font-family: "obviously", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.underline-btn-ltgreen-lg::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--ltgreen);
+  bottom: 0;
+  left: 50%;
+  transition: width 0.2s ease, left 0.2s ease;
+}
+
+.underline-btn-ltgreen-lg:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.nav {
+  height: 104px;
+  transition: all ease 0.3s;
+  overflow: hidden;
+}
+
+.menu-open {
+  height: 460px;
+}
+
+.mobile-nav {
+  height: 72px;
+  overflow: scroll;
+  transition: all ease 0.3s;
+}
+
+.mobile-open {
+  height: calc(100vh - 24px);
+}
+
+.menu-grid {
+  transition: all ease 0.3s;
+  transition-delay: 0.1s;
+  transform: scale(0.95);
+}
+
+.nav.menu-open .menu-grid {
+  transform: scale(1);
+}
+
+.nav.menu-open .drop-down::before {
+  width: 100%;
+  left: 0;
+}
+
+.nav.menu-open .drop-down {
+  transform: scale(1);
+}
+
+.card {
+  text-align: center;
+  display: block;
+}
+
+.card:hover .underline-btn::before,
+.card:hover .underline-btn-lg::before,
+.card:hover .underline-btn-ltgreen-lg::before {
+  width: 100%;
+  left: 0;
+}
+
+.circle-wrap {
+  width: 216px;
+  height: 260px;
+  border-bottom-right-radius: 999px;
+  border-bottom-left-radius: 999px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.circle-wrap-lg {
+  width: 216px;
+  height: 260px;
+  border-bottom-right-radius: 999px;
+  border-bottom-left-radius: 999px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .circle-wrap-lg {
+    width: 360px;
+    height: 460px;
+  }
+}
+
+.circle {
+  width: 216px;
+  height: 216px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--ltgreen);
+  border-radius: 999px;
+  margin: auto;
+  z-index: 1;
+  transition: all ease 0.3s;
+}
+
+.circle-lg {
+  width: 216px;
+  height: 216px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 999px;
+  margin: auto;
+  z-index: 1;
+  transition: all ease 0.3s;
+}
+
+@media (min-width: 768px) {
+  .circle-lg {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+.featured-img {
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  transform: translateY(40px);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .featured-img {
+  transform: translateY(30px);
+}
+
+.card:hover .circle-wrap-lg .featured-img {
+  transform: translateY(20px);
+}
+
+.card:hover .circle {
+  transform: scale(0.95);
+  bottom: -9px;
+}
+
+.card:hover .circle-lg {
+  transform: scale(0.95);
+  bottom: -9px;
+}
+
+@media (min-width: 768px) {
+  .card:hover .circle-lg {
+    transform: scale(0.95);
+    bottom: -15px;
+  }
+}
+
+.hero-bg {
+  background-image: url('/assets/img/hyper-energy-bar-hero.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.obvi-input::placeholder {
+  font-family: "obviously", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 14px;
+  color: var(--green);
+}
