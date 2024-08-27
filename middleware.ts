@@ -1,21 +1,24 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import { getToken } from 'next-auth/jwt';
 
-export function middleware(req: NextRequest) {
-  const { pathname } = req.nextUrl;
+const secret = process.env.NEXTAUTH_SECRET;
 
-  // Allow access to the sign-in page
-  if (pathname === '/admin/sign-in') {
+export async function middleware(req: NextRequest) {
+  const url = req.nextUrl.clone();
+  const pathname = url.pathname;
+
+  // Allow access to the sign-in page without authentication
+  if (pathname === '/sign-in') {
     return NextResponse.next();
   }
 
-  // Check if the user is authenticated
-  const sessionToken = req.cookies.get('next-auth.session-token');
+  // Get the token from the request
+  const token = await getToken({ req, secret });
 
-  // If not authenticated and accessing other /admin pages, redirect to sign-in page
-  if (pathname.startsWith('/admin') && !sessionToken) {
-    const url = req.nextUrl.clone();
-    url.pathname = '/admin/sign-in';
+  // If not authenticated and trying to access admin pages, redirect to sign-in page
+  if (pathname.startsWith('/admin') && !token) {
+    url.pathname = '/sign-in';
     return NextResponse.redirect(url);
   }
 
@@ -24,5 +27,5 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/admin/:path*'],
+  matcher: ['/admin/:path*', '/sign-in'],
 };
