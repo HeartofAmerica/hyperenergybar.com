@@ -1,20 +1,25 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-import { getToken } from 'next-auth/jwt';
 
-const secret = process.env.NEXTAUTH_SECRET;
+export function middleware(req: NextRequest) {
+  const { pathname } = req.nextUrl;
 
-export async function middleware(req: NextRequest) {
-  const token = await getToken({ req, secret });
-  const url = req.nextUrl.clone();
-
-  // Check if the user is authenticated
-  if (url.pathname.startsWith('/admin') && !token) {
-    // Redirect to sign-in page if not authenticated
-    return NextResponse.redirect(new URL('/admin/sign-in', req.url));
+  // Allow access to the sign-in page
+  if (pathname === '/admin/sign-in') {
+    return NextResponse.next();
   }
 
-  // Allow authenticated users to proceed
+  // Check if the user is authenticated
+  const sessionToken = req.cookies.get('next-auth.session-token');
+
+  // If not authenticated and accessing other /admin pages, redirect to sign-in page
+  if (pathname.startsWith('/admin') && !sessionToken) {
+    const url = req.nextUrl.clone();
+    url.pathname = '/admin/sign-in';
+    return NextResponse.redirect(url);
+  }
+
+  // Allow access to other pages
   return NextResponse.next();
 }
 
