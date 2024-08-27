@@ -28,7 +28,6 @@ export default function Home() {
               <h1 className="obvi-xl">
                 {heroTitle}
               </h1>
-              
             </div>
           </div>
         </div>
