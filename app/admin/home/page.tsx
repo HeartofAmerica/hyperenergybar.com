@@ -6,15 +6,15 @@ import { useRouter } from 'next/navigation';
 import AdminMenu from '@/components/admin-menu';
 
 export default function AdminHome() {
-  const [heroTitle, setHeroTitle] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
+  const [heroTitle, setHeroTitle] = useState<string>('');
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const router = useRouter();
 
   useEffect(() => {
     const fetchSession = async () => {
       const session = await getSession();
       if (!session) {
-        router.push('/admin/sign-in');
+        router.push('/sign-in'); // Adjust path as needed
       }
     };
 
@@ -23,9 +23,17 @@ export default function AdminHome() {
 
   useEffect(() => {
     const fetchContent = async () => {
-      const response = await fetch('/assets/content/content.json');
-      const data = await response.json();
-      setHeroTitle(data.home.heroTitle);
+      try {
+        const response = await fetch('/assets/content/content.json');
+        if (!response.ok) {
+          throw new Error('Failed to fetch content');
+        }
+        const data = await response.json();
+        console.log('Fetched content:', data); // Debugging line
+        setHeroTitle(data.home.heroTitle || ''); // Default to empty string if not available
+      } catch (error) {
+        console.error('Error fetching content:', error);
+      }
     };
 
     fetchContent();
@@ -41,18 +49,25 @@ export default function AdminHome() {
       },
     };
 
-    const response = await fetch('/api/update-content', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(updatedContent),
-    });
+    try {
+      const response = await fetch('/api/update-content', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(updatedContent),
+      });
 
-    if (response.ok) {
+      if (!response.ok) {
+        throw new Error('Failed to update content');
+      }
+
       alert('Content updated successfully');
-    } else {
+      // Optionally, you might want to refresh the page or state here
+      router.refresh(); // If using Next.js 14
+    } catch (error) {
       alert('Failed to update content');
+      console.error('Error updating content:', error);
     }
 
     setIsLoading(false);
