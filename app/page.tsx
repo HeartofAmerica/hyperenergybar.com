@@ -1,8 +1,23 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Nav from '@/components/nav';
 import Footer from '@/components/footer';
 
 export default function Home() {
+  const [heroTitle, setHeroTitle] = useState('');
+
+  useEffect(() => {
+    const fetchContent = async () => {
+      const response = await fetch('/assets/content/content.json');
+      const data = await response.json();
+      setHeroTitle(data.home.heroTitle);
+    };
+
+    fetchContent();
+  }, []);
+
   return (
     <>
       <Nav/>
@@ -11,7 +26,7 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-4">
             <div className="block">
               <h1 className="obvi-xl">
-                The Search for energy is over
+                {heroTitle}
               </h1>
             </div>
           </div>
