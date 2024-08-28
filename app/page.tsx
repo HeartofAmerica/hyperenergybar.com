@@ -123,7 +123,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="pt-10 sm:pt-20 bg-xltgreen">
+      <div className="pt-10 pb-10 sm:pt-20 sm:pb-0 bg-xltgreen">
         <div className="container max-w-screen-lg px-5 sm:px-10">
           <div className="sm:grid grid-cols-2 sm:gap-20 sm:flex sm:items-center">
             <div className="block">
@@ -133,7 +133,7 @@ export default function Home() {
                 width={1080}
                 height={1080}
                 alt="Hyper Energy Bar"
-                className="mx-auto"
+                className="mx-auto mb-5 sm:mb-0"
               />
             </div>
             <div className="block">
