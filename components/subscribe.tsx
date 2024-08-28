@@ -33,22 +33,22 @@ const Subscribe = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="block">
+    <form onSubmit={handleSubmit} className="flex flex-wrap sm:flex-nowrap items-center space-y-2 sm:space-y-0 sm:space-x-2 sm:bg-ltgreen sm:rounded-full">
       <input
         type="email"
-        placeholder="Enter your email"
+        placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
-        className="obvi-input px-4 lg:px-6 py-2 lg:py-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-green bg-ltgreen block w-full mb-2"
+        className="obvi-input px-4 lg:px-6 py-2 lg:py-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-green bg-ltgreen w-full sm:flex-1"
       />
       <select
         value={location}
         onChange={(e) => setLocation(e.target.value)}
         required
-        className="obvi-xs text-green obvi-input px-4 lg:px-6 py-2 lg:py-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-green bg-ltgreen block w-full"
+        className="obvi-xs text-green obvi-input px-4 lg:px-6 py-2 lg:py-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-green bg-ltgreen w-full sm:flex-1"
       >
-        <option value="">Select a location</option>
+        <option value="">Location</option>
         <option value="Altoona">Altoona</option>
         <option value="Grimes">Grimes</option>
         <option value="Urbandale">Urbandale</option>
@@ -57,9 +57,13 @@ const Subscribe = () => {
       </select>
       <button
         type="submit"
-        className="bg-green-500 text-white p-2 rounded-r-md flex items-center justify-center"
+        className="flex items-center justify-center w-full sm:w-auto"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 216" fill="none" strokeWidth={27} stroke="currentColor" className="w-6 h-6"><path d="M99,18L189,108L99,198M189,108L9,108"/></svg>
+        <div className="bg-green text-white p-3 rounded-full hover:bg-xdarkgreen border-2 border-green hover:border-xdarkgreen transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 216" fill="none" strokeWidth={27} stroke="currentColor" className="w-5 h-5">
+            <path d="M99,18L189,108L99,198M189,108L9,108"/>
+          </svg>
+        </div>
       </button>
       {status === 'loading' && <p className="ml-4 text-gray-500">Sending...</p>}
       {status === 'success' && <p className="ml-4 text-green-500">Subscribed!</p>}

@@ -54,7 +54,7 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/menu/specials" className="obvi-sm text-white hover:text-green trasition-all duration-300 mb-5">
+                    <Link href="/specials" className="obvi-sm text-white hover:text-green trasition-all duration-300 mb-5">
                       Specials
                     </Link>
                   </li>
