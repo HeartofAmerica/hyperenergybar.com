@@ -40,13 +40,13 @@ const Subscribe = () => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
-        className="obvi-xs obvi-input px-6 pt-2 pb-3 rounded-3xl bg-ltgreen w-full flex-1"
+        className="obvi-xs obvi-input px-6 pt-2 pb-3 rounded-3xl bg-ltgreen w-full"
       />
       <select
         value={location}
         onChange={(e) => setLocation(e.target.value)}
         required
-        className="obvi-xs text-green obvi-input mt--1 px-6 pt-2 pb-3 rounded-3xl bg-ltgreen w-full flex-1 mr-5"
+        className="obvi-xs text-green obvi-input mt--1 px-6 pt-2 pb-3 rounded-3xl bg-ltgreen w-full mr-5"
       >
         <option value="">Location</option>
         <option value="Altoona">Altoona</option>
