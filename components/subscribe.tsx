@@ -57,7 +57,7 @@ const Subscribe = () => {
       </select>
       <button
         type="submit"
-        className="flex items-center justify-center w-full w-auto"
+        className=""
       >
         <div className="bg-green text-white p-3 rounded-full hover:bg-xdarkgreen border-2 border-green hover:border-xdarkgreen transition-all">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 216" fill="none" strokeWidth={27} stroke="currentColor" className="w-5 h-5">
