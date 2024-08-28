@@ -33,20 +33,20 @@ const Subscribe = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-wrap sm:flex-nowrap items-center space-y-2 sm:space-y-0 sm:space-x-2 sm:bg-ltgreen sm:rounded-full">
+    <form onSubmit={handleSubmit} className="bg-ltgreen rounded-full flex items-center">
       <input
         type="email"
         placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
-        className="obvi-input px-4 lg:px-6 py-2 lg:py-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-green bg-ltgreen w-full sm:flex-1"
+        className="obvi-xs obvi-input px-6 pt-2 pb-3 rounded-3xl bg-ltgreen w-full flex-1"
       />
       <select
         value={location}
         onChange={(e) => setLocation(e.target.value)}
         required
-        className="obvi-xs text-green obvi-input px-4 lg:px-6 py-2 lg:py-3 rounded-3xl focus:outline-none focus:ring-2 focus:ring-green bg-ltgreen w-full sm:flex-1"
+        className="obvi-xs text-green obvi-input mt--1 px-6 pt-2 pb-3 rounded-3xl bg-ltgreen w-full flex-1 mr-5"
       >
         <option value="">Location</option>
         <option value="Altoona">Altoona</option>
@@ -57,7 +57,7 @@ const Subscribe = () => {
       </select>
       <button
         type="submit"
-        className="flex items-center justify-center w-full sm:w-auto"
+        className="flex items-center justify-center w-full w-auto"
       >
         <div className="bg-green text-white p-3 rounded-full hover:bg-xdarkgreen border-2 border-green hover:border-xdarkgreen transition-all">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 216" fill="none" strokeWidth={27} stroke="currentColor" className="w-5 h-5">

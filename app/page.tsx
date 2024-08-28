@@ -131,7 +131,7 @@ export default function Home() {
                 src="/assets/img/hyper-cob.png"
                 quality={100}
                 width={1080}
-                height={1080}
+                height={1140}
                 alt="Hyper Energy Bar"
                 className="mx-auto mb-5 sm:mb-0"
               />
