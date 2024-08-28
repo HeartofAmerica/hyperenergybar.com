@@ -21,33 +21,33 @@ export default function Nav() {
   const animationContainer = useRef<HTMLDivElement>(null);
   const animationInstance = useRef<any>(null);
 
-  useEffect(() => {
-    if (animationContainer.current) {
-      animationInstance.current = lottie.loadAnimation({
-        container: animationContainer.current,
-        renderer: 'svg',
-        loop: false,
-        autoplay: false,
-        path: '/assets/img/menu-bars.json',
-      });
-    }
-    return () => {
-      animationInstance.current?.destroy();
-    };
-  }, []);
+  // useEffect(() => {
+  //   if (animationContainer.current) {
+  //     animationInstance.current = lottie.loadAnimation({
+  //       container: animationContainer.current,
+  //       renderer: 'svg',
+  //       loop: false,
+  //       autoplay: false,
+  //       path: '/assets/img/menu-bars.json',
+  //     });
+  //   }
+  //   return () => {
+  //     animationInstance.current?.destroy();
+  //   };
+  // }, []);
 
-  const toggleMenu = () => {
-    setIsMobileOpen(prevState => {
-      if (prevState) {
-        animationInstance.current?.setDirection(-1);
-        animationInstance.current?.play();
-      } else {
-        animationInstance.current?.setDirection(1);
-        animationInstance.current?.play();
-      }
-      return !prevState;
-    });
-  };
+  // const toggleMenu = () => {
+  //   setIsMobileOpen(prevState => {
+  //     if (prevState) {
+  //       animationInstance.current?.setDirection(-1);
+  //       animationInstance.current?.play();
+  //     } else {
+  //       animationInstance.current?.setDirection(1);
+  //       animationInstance.current?.play();
+  //     }
+  //     return !prevState;
+  //   });
+  // };
 
   return (
     <>
@@ -185,8 +185,8 @@ export default function Nav() {
             <div
               ref={animationContainer}
               className="w-8 h-8 cursor-pointer"
-              onClick={toggleMenu}
-            ></div>
+            >
+            </div>
           </div>
         </div>
         <div

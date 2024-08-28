@@ -47,7 +47,7 @@ export default function Home() {
             <h2 className="obvi-lg mb-5 sm:mb-10">
               EXPLORE OUR FLAVORS
             </h2>
-            <div className="max-w-screen-md mx-auto">
+            <div className="max-w-screen-sm mx-auto">
               <p className="text-sm sm:text-xl mb-5 sm:mb-10">
                 While traditional coffee bars just exist, Hyper Energy Bars® exist with a vibe of energetic differentiation. Hyper Energy Bar’s® hand-crafted coffee and infused energy drinks are sure to keep you hyped at any point throughout your day.
               </p>
