@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
@@ -52,7 +52,7 @@ export default function Nav() {
   return (
     <>
       <nav
-        className={`nav bg-white fixed top-0 left-0 right-0 mx-3 mt-3 rounded-3xl z-50 px-10 hidden md:block ${isMenuOpen ? 'menu-open' : ''}`}
+        className={`nav bg-white fixed top-0 left-0 right-0 mx-3 mt-3 roudned-2xl sm:rounded-3xl z-50 px-10 hidden md:block ${isMenuOpen ? 'menu-open' : ''}`}
       >
         <div className="flex justify-between items-center">
           <ul className="flex space-x-10">
