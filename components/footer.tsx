@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="grid md:grid-cols-2 gap-4">
             <div className="grid md:grid-cols-3 gap-4">
               <div className="col-span-2">
-                <h3 className="obvi-md text-ltgreen mb-2">
+                <h3 className="obvi-2sm text-ltgreen mb-2">
                   LET’S BE FRIENDS
                 </h3>
                 <p className="text-white mb-5 lg:mb-10">
@@ -34,7 +34,7 @@ export default function Footer() {
             </div>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="block">
-                <h3 className="obvi-md text-ltgreen mb-2">
+                <h3 className="obvi-2sm text-ltgreen mb-2">
                   MENU
                 </h3>
                 <ul className="block">
@@ -66,7 +66,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="block">
-                <h3 className="obvi-md text-ltgreen mb-2">
+                <h3 className="obvi-2sm text-ltgreen mb-2">
                   NAVIGATE
                 </h3>
                 <ul className="block">

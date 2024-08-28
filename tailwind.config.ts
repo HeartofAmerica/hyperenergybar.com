@@ -26,6 +26,7 @@ const config: Config = {
         xltgreen: '#F7FAEE',
         darkgreen: '#265B61',
         xdarkgreen: '#1D4F54',
+        neon: '#E8FFAF',
         yellow: '#F8D77C',
         red: '#F8D77C',
         pinkpowder: '#FFB8B9',
