@@ -392,6 +392,24 @@ h1, h2, h3, h4, h5 {
   background-position: center;
 }
 
+.white-card {
+  border-radius: 22px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.white-card-content {
+  padding: 10px 10px 40px 10px;
+  text-align: center;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .white-card-content {
+    padding: 20px 20px 60px 20px;
+  }
+}
+
 .obvi-input::placeholder {
   font-family: "obviously", "Helvetica Neue", -apple-system, BlinkMacSystemFont, sans-serif;
   text-transform: uppercase;

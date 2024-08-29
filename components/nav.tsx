@@ -154,10 +154,10 @@ export default function Nav() {
                 Rewards
               </Link>
             </li>
-            <li className={pathname === '/swag' ? 'active' : ''}>
-              <Link href="/swag" className="underline-btn">
+            <li>
+              <a href="https://hyperenergybar.myshopify.com/" target="_blank" className="underline-btn">
                 Swag
-              </Link>
+              </a>
             </li>
             <li className={pathname === '/catering' ? 'active' : ''}>
               <Link href="/catering" className="underline-btn">
@@ -216,9 +216,9 @@ export default function Nav() {
                   </Link>
                 </li>
                 <li className={pathname === '/swag' ? 'active' : 'my-5'}>
-                  <Link href="/swag" className="underline-btn-lg">
+                  <a href="https://hyperenergybar.myshopify.com/" target="_blank" className="underline-btn-lg">
                     Swag
-                  </Link>
+                  </a>
                 </li>
                 <li className={pathname === '/catering' ? 'active' : 'my-5'}>
                   <Link href="/catering" className="underline-btn-lg">

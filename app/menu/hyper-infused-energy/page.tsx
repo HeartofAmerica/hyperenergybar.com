@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Nav from '@/components/nav';
+import Wave from '@/components/wave';
 import Footer from '@/components/footer';
 
 export default function HyperInfusedEnergy() {
@@ -22,7 +23,7 @@ export default function HyperInfusedEnergy() {
           </div>
         </div>
       </div>
-      <div className="pb-10 lg:pb-20 bg-xltgreen">
+      <div className="pb-10 sm:pb-40 bg-xltgreen">
         <div className="container max-w-screen-lg px-5 lg:px-10">
           <div className="grid lg:grid-cols-3 gap-5 lg:gap-20">
             <Link href="/menu/hyper-infused-energy/pink-powder" className="card">
@@ -196,6 +197,9 @@ export default function HyperInfusedEnergy() {
           </div>
         </div>
       </div>
+      <div className="wave-margin text-green z-40">
+        <Wave />
+      </div>
       <div className="py-10 lg:py-20 bg-green">
         <div className="container max-w-screen-lg px-5 lg:px-10">
           <h2 className="obvi-lg mb-5 lg:mb-10 text-ltgreen text-center">
@@ -212,7 +216,7 @@ export default function HyperInfusedEnergy() {
                   alt="Hyper Energy Bar Smoothies"
                   className="featured-img"
                 />
-                <div className="circle-lg bg-ltgreen"></div>
+                <div className="circle-lg bg-white/25"></div>
               </div>
               <h3 className="underline-btn-ltgreen-lg">Smoothies</h3>
             </Link>
@@ -226,7 +230,7 @@ export default function HyperInfusedEnergy() {
                   alt="Hyper Energy Bar Coffee"
                   className="featured-img"
                 />
-                <div className="circle-lg bg-ltgreen"></div>
+                <div className="circle-lg bg-white/25"></div>
               </div>
               <h3 className="underline-btn-ltgreen-lg">Coffee</h3>
             </Link>
@@ -240,7 +244,7 @@ export default function HyperInfusedEnergy() {
                   alt="Hyper Energy Bar Snacks"
                   className="featured-img"
                 />
-                <div className="circle-lg bg-ltgreen"></div>
+                <div className="circle-lg bg-white/25"></div>
               </div>
               <h3 className="underline-btn-ltgreen-lg">Snacks</h3>
             </Link>
