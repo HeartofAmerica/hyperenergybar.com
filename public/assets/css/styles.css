@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5 {
 
 @media (min-width: 768px) {
   .obvi-xl {
-    font-size: 90px;
+    font-size: 5.5vw;
   }
 }
 
@@ -387,9 +387,19 @@ h1, h2, h3, h4, h5 {
 }
 
 .hero-bg {
+  padding: 120px 0;
   background-image: url('/assets/img/hyper-energy-bar-hero.png');
   background-size: cover;
   background-position: center;
+  overflow: hidden;
+  height: 900px;
+}
+
+@media (min-width: 1024px) {
+  .hero-bg {
+    padding: 240px 0 160px 0;
+    height: initial;
+  }
 }
 
 .hero-gradient-1 {

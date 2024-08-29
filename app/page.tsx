@@ -58,10 +58,10 @@ export default function Home() {
   return (
     <>
       <Nav/>
-      <div className="hero-bg pt-40 pb-20 sm:pt-60 sm:pb-40 overflow-hidden hero">
+      <div className="hero-bg hero">
         <div className="container max-w-screen-xl px-5 sm:px-10">
-          <div className="sm:grid grid-cols-2 sm:gap-40">
-            <div>
+          <div className="lg:grid grid-cols-2 lg:gap-40">
+            <div className="pb-20 lg:pb-0">
               <h1 className="obvi-xl mb-5 sm:mb-10">
                 The search for energy is over
               </h1>
