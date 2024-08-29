@@ -105,7 +105,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="grid sm:grid-cols-3 gap-5 sm:gap-20">
+          <div className="grid lg:grid-cols-3 gap-5 lg:gap-20">
             <Link href="/menu/hyper-infused-energy" className="card pb-10 lg:pb-20 group">
               <div className="circle-wrap-lg text-center">
                 <Image
