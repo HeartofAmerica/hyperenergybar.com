@@ -93,27 +93,68 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="py-20 sm:py-40">
-        <div className="container max-w-screen-xl px-5 sm:px-10">
+      <div className="pt-10 sm:pt-28">
+        <div className="container max-w-screen-lg px-5 sm:px-10">
           <div className="text-center">
             <h2 className="obvi-lg mb-5 sm:mb-10">
               EXPLORE OUR FLAVORS
             </h2>
             <div className="max-w-screen-sm mx-auto">
-              <p className="text-sm sm:text-xl mb-5 sm:mb-10">
-                While traditional coffee bars just exist, Hyper Energy Bars® exist with a vibe of energetic differentiation. Hyper Energy Bar’s® hand-crafted coffee and infused energy drinks are sure to keep you hyped at any point throughout your day.
+              <p className="text-sm sm:text-xl mb-10 sm:mb-20">
+                While traditional coffee bars just exist, Hyper Energy Bars® exist with a vibe of energetic differentiation. Hyper Energy Bar’s® hand-crafted coffee and infused energy drinks are sure to keep you hyped.
               </p>
-              <Link href="/menu/hyper-infused-energy" className="btn">
-                View Menu
-              </Link>
             </div>
+          </div>
+          <div className="grid sm:grid-cols-3 gap-5 sm:gap-20">
+            <Link href="/menu/hyper-infused-energy" className="card pb-10 lg:pb-20 group">
+              <div className="circle-wrap-lg text-center">
+                <Image
+                  src="/assets/img/adrenaline-junkie.png"
+                  quality={100}
+                  width={540}
+                  height={720}
+                  alt="Hyper Energy Bar Hyper-Infused Energy"
+                  className="featured-img"
+                />
+                <div className="circle-lg bg-ltgreen"></div>
+              </div>
+              <h3 className="underline-btn-lg">Hyper-Infused Energy</h3>
+            </Link>
+            <Link href="/menu/smoothies" className="card pb-10 lg:pb-20 group">
+              <div className="circle-wrap-lg text-center">
+                <Image
+                  src="/assets/img/lazy-river.png"
+                  quality={100}
+                  width={540}
+                  height={720}
+                  alt="Hyper Energy Bar Smoothies"
+                  className="featured-img"
+                />
+                <div className="circle-lg bg-ltgreen"></div>
+              </div>
+              <h3 className="underline-btn-lg">Smoothies</h3>
+            </Link>
+            <Link href="/menu/coffee" className="card pb-10 lg:pb-20 group">
+              <div className="circle-wrap-lg text-center">
+                <Image
+                  src="/assets/img/toasted-coaster.png"
+                  quality={100}
+                  width={540}
+                  height={720}
+                  alt="Hyper Energy Bar Coffee"
+                  className="featured-img"
+                />
+                <div className="circle-lg bg-ltgreen"></div>
+              </div>
+              <h3 className="underline-btn-lg">Coffee</h3>
+            </Link>
           </div>
         </div>
       </div>
       <div className="text-xltgreen z-40">
         <Wave/>
       </div>
-      <div className="pt-10 sm:pt-0 bg-xltgreen">
+      <div className="pt-10 sm:-mt-10 bg-xltgreen">
         <div className="container max-w-screen-lg px-5 sm:px-10">
           <div className="sm:grid grid-cols-2 sm:gap-20 sm:flex sm:items-center">
             <div className="block">
