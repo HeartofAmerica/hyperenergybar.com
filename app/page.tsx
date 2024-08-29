@@ -1,12 +1,14 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Nav from '@/components/nav';
 import Wave from '@/components/wave';
 import WaveBottom from '@/components/wave-bottom';
 import Footer from '@/components/footer';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export default function Home() {
   const [heroTitle, setHeroTitle] = useState('');
@@ -21,22 +23,72 @@ export default function Home() {
     fetchContent();
   }, []);
 
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.fromTo(
+      '.scroll-img-left',
+      { y: -150 },
+      {
+        y: 0,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: '.hero',
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      '.scroll-img-right',
+      { y: 400 },
+      {
+        y: 0,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: '.hero',
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true,
+        },
+      }
+    );
+  }, []);
+
   return (
     <>
       <Nav/>
-      <div className="py-40 sm:py-72 hero-bg">
+      <div className="hero-bg pt-40 pb-20 sm:pt-72 sm:pb-36 overflow-hidden hero">
         <div className="container max-w-screen-xl px-5 sm:px-10">
-          <div className="sm:grid grid-cols-2 sm:gap-10">
-            <div className="block">
+          <div className="sm:grid grid-cols-2 sm:gap-40">
+            <div>
               <h1 className="obvi-xl mb-5 sm:mb-10">
-                {heroTitle}
+                The search for energy is over
               </h1>
-              <p className="text-sm sm:text-xl mb-5 sm:mb-10">
+              <p className="text-sm sm:text-xl mb-5 sm:mb-10 sm:mr-20">
                 While traditional coffee bars just exist, Hyper Energy Bars® exist with a vibe of energetic differentiation. Hyper Energy Bar’s® hand-crafted coffee and infused energy drinks are sure to keep you hyped at any point throughout your day.
               </p>
-              <Link href="/menu" className="btn">
+              <a href="/menu" className="btn">
                 View Menu
-              </Link>
+              </a>
+            </div>
+            <div className="relative">
+              <Image
+                src="/assets/img/spaceshot-full.png"
+                quality={100}
+                width={540}
+                height={720}
+                alt="Hyper Energy Bar Spaceshot"
+                className="absolute left-img left-[-50px] top-[-50px] z-20 scroll-img-left"
+              />
+              <Image
+                src="/assets/img/bubble-gum-full.png"
+                quality={100}
+                width={540}
+                height={720}
+                alt="Hyper Energy Bar Spaceshot"
+                className="absolute right-img left-[250px] top-[100px] z-10 scroll-img-right"
+              />
             </div>
           </div>
         </div>

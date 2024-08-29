@@ -197,10 +197,10 @@ export default function HyperInfusedEnergy() {
           </div>
         </div>
       </div>
-      <div className="wave-margin text-green z-40">
+      <div className="bg-xltgreen text-green">
         <Wave />
       </div>
-      <div className="py-10 lg:py-20 bg-green">
+      <div className="pt-5 lg:pt-10 pb-20 sm:pb-40 bg-green -mt-1">
         <div className="container max-w-screen-lg px-5 lg:px-10">
           <h2 className="obvi-lg mb-5 lg:mb-10 text-ltgreen text-center">
             Explore More

@@ -437,8 +437,25 @@ h1, h2, h3, h4, h5 {
   height: auto;
 }
 
-.wave-margin {
-  margin-top: -112px;
+@media (min-width: 768px) {
+  .wave-margin {
+    margin-top: -112px;
+  }
+}
+
+.image {
+  position: absolute;
+  left: 0;
+}
+
+.image-top {
+  top: 0;
+  transform: translateY(-10%);
+}
+
+.image-bottom {
+  top: 50%; /* Adjust this value for stagger effect */
+  transform: translateY(10%);
 }
 
 
