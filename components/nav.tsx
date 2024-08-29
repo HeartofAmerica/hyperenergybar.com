@@ -1,11 +1,13 @@
 'use client';
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import Lottie from 'lottie-react';
+import dynamic from 'next/dynamic';
 import menuBarsAnimation from '../public/assets/img/menu-bars.json';
+
+const DynamicLottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 export default function Nav() {
   const pathname = usePathname();
@@ -13,6 +15,14 @@ export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const lottieRef = useRef<any>(null);
+
+  useEffect(() => {
+    return () => {
+      if (lottieRef.current) {
+        lottieRef.current.goToAndStop(0);
+      }
+    };
+  }, []);
 
   const handleMouseEnterMenu = () => {
     setIsMenuOpen(true);
@@ -169,7 +179,7 @@ export default function Nav() {
           </Link>
           <div className="block">
             <div className="w-8 h-8 cursor-pointer" onClick={toggleMenu}>
-              <Lottie
+              <DynamicLottie
                 animationData={menuBarsAnimation}
                 loop={false}
                 autoplay={false}
