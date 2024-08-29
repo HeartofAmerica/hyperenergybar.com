@@ -9,14 +9,25 @@ export default function Catering() {
   return (
     <>
       <Nav/>
-      <div className="pt-36 pb-5 lg:pt-44 lg:pb-20 bg-xltgreen">
-        <div className="container max-w-screen-lg px-5 lg:px-10 text-center">
-          <h1 className="obvi-xl mb-5 lg:mb-10">
-            Catering
-          </h1>
-          <div className="max-w-screen-md mx-auto">
-            <p className="text-xl lg:text-2xl">
-            </p>
+      <div className="hero-gradient-1">
+        <div className="container max-w-screen-xl pt-10 sm:pt-20">
+          <div className="sm:grid sm:grid-cols-2 sm:gap-10 flex items-center">
+            <div className="py-20 sm:py-40 mx-5 sm:mx-10">
+              <h1 className="obvi-xl mb-5 sm:mb-10">
+                Hype up your event
+              </h1>
+              <p className="text-sm sm:text-xl mb-5 sm:mb-10">
+                Now offering catering in the Greater Des Moines Area for everything from graduation parties and high school events to corporate meetings and weddings! Contact us and a member of our team will be in touch with you shortly.
+              </p>
+            </div>
+            <Image
+              src="/assets/img/hyper-catering.jpg"
+              quality={100}
+              width={965}
+              height={1054}
+              alt="Hyper Energy Bar Catering"
+              className="mix-blend-multiply"
+            />
           </div>
         </div>
       </div>

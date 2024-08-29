@@ -10,8 +10,8 @@ export default function Footer() {
     <>
       <footer className="py-10 lg:py-20 bg-darkgreen">
         <div className="container max-w-screen-xl px-5 lg:px-10">
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-2 gap-10">
+            <div className="grid md:grid-cols-3 gap-10">
               <div className="col-span-2">
                 <h3 className="obvi-2sm text-ltgreen mb-2">
                   LET’S BE FRIENDS
@@ -32,7 +32,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 gap-10">
               <div className="block">
                 <h3 className="obvi-2sm text-ltgreen mb-2">
                   MENU
@@ -86,11 +86,6 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/rewards" className="obvi-sm text-white hover:text-green trasition-all duration-300 mb-5">
-                      Rewards
-                    </Link>
-                  </li>
-                  <li>
                     <Link href="/media" className="obvi-sm text-white hover:text-green trasition-all duration-300 mb-5">
                       Media
                     </Link>
@@ -118,7 +113,7 @@ export default function Footer() {
       </footer>
       <div className="py-5 bg-xdarkgreen">
         <div className="container max-w-screen-xl px-5 lg:px-10">
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-10">
             <div className="text-white">
               © 2024 Hyper Energy Bar
             </div>

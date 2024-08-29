@@ -149,9 +149,9 @@ export default function Nav() {
             </Link>
           </div>
           <ul className="flex space-x-10">
-            <li className={pathname === '/rewards' ? 'active' : ''}>
-              <Link href="/rewards" className="underline-btn">
-                Rewards
+            <li className={pathname === '/media' ? 'active' : ''}>
+              <Link href="/media" className="underline-btn">
+                Media
               </Link>
             </li>
             <li>

@@ -392,6 +392,12 @@ h1, h2, h3, h4, h5 {
   background-position: center;
 }
 
+.hero-gradient-1 {
+  background-image: url('/assets/img/gradient-green-blue-yellow.png');
+  background-size: cover;
+  background-position: center;
+}
+
 .white-card {
   border-radius: 22px;
   background: #fff;
