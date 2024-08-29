@@ -87,7 +87,7 @@ export default function Home() {
                 width={540}
                 height={720}
                 alt="Hyper Energy Bar Spaceshot"
-                className="absolute right-img left-[250px] top-[20px] z-10 scroll-img-right"
+                className="absolute right-img left-[80px] sm:left-[250px] top-[20px] z-10 scroll-img-right"
               />
             </div>
           </div>
