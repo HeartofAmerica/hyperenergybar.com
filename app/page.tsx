@@ -27,7 +27,7 @@ export default function Home() {
     gsap.registerPlugin(ScrollTrigger);
     gsap.fromTo(
       '.scroll-img-left',
-      { y: -150 },
+      { y: -270 },
       {
         y: 0,
         ease: 'power2.out',
@@ -41,7 +41,7 @@ export default function Home() {
     );
     gsap.fromTo(
       '.scroll-img-right',
-      { y: 400 },
+      { y: 540 },
       {
         y: 0,
         ease: 'power2.out',
@@ -58,7 +58,7 @@ export default function Home() {
   return (
     <>
       <Nav/>
-      <div className="hero-bg pt-40 pb-20 sm:pt-72 sm:pb-36 overflow-hidden hero">
+      <div className="hero-bg pt-40 pb-20 sm:pt-60 sm:pb-40 overflow-hidden hero">
         <div className="container max-w-screen-xl px-5 sm:px-10">
           <div className="sm:grid grid-cols-2 sm:gap-40">
             <div>
@@ -79,7 +79,7 @@ export default function Home() {
                 width={540}
                 height={720}
                 alt="Hyper Energy Bar Spaceshot"
-                className="absolute left-img left-[-50px] top-[-50px] z-20 scroll-img-left"
+                className="absolute left-img left-[-50px] top-[-20px] z-20 scroll-img-left"
               />
               <Image
                 src="/assets/img/bubble-gum-full.png"
@@ -87,7 +87,7 @@ export default function Home() {
                 width={540}
                 height={720}
                 alt="Hyper Energy Bar Spaceshot"
-                className="absolute right-img left-[250px] top-[100px] z-10 scroll-img-right"
+                className="absolute right-img left-[250px] top-[20px] z-10 scroll-img-right"
               />
             </div>
           </div>
