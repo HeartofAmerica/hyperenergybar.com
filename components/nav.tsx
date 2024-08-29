@@ -1,53 +1,40 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import lottie from 'lottie-web';
+import Lottie from 'lottie-react';
+import menuBarsAnimation from '../public/assets/img/menu-bars.json';
 
 export default function Nav() {
   const pathname = usePathname();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const lottieRef = useRef<any>(null);
+
   const handleMouseEnterMenu = () => {
     setIsMenuOpen(true);
   };
+
   const handleMouseLeaveMenu = () => {
     setIsMenuOpen(false);
   };
 
-  const [isMobileOpen, setIsMobileOpen] = useState(false);
-  const animationContainer = useRef<HTMLDivElement>(null);
-  const animationInstance = useRef<any>(null);
-
-  // useEffect(() => {
-  //   if (animationContainer.current) {
-  //     animationInstance.current = lottie.loadAnimation({
-  //       container: animationContainer.current,
-  //       renderer: 'svg',
-  //       loop: false,
-  //       autoplay: false,
-  //       path: '/assets/img/menu-bars.json',
-  //     });
-  //   }
-  //   return () => {
-  //     animationInstance.current?.destroy();
-  //   };
-  // }, []);
-
-  // const toggleMenu = () => {
-  //   setIsMobileOpen(prevState => {
-  //     if (prevState) {
-  //       animationInstance.current?.setDirection(-1);
-  //       animationInstance.current?.play();
-  //     } else {
-  //       animationInstance.current?.setDirection(1);
-  //       animationInstance.current?.play();
-  //     }
-  //     return !prevState;
-  //   });
-  // };
+  const toggleMenu = () => {
+    setIsMobileOpen(prevState => {
+      const newState = !prevState;
+      if (lottieRef.current) {
+        if (newState) {
+          lottieRef.current.play();
+        } else {
+          lottieRef.current.goToAndStop(0);
+        }
+      }
+      return newState;
+    });
+  };
 
   return (
     <>
@@ -178,14 +165,16 @@ export default function Nav() {
               width={132.75}
               height={54}
               alt="Hyper Energy Bar Logo"
-              className=""
             />
           </Link>
           <div className="block">
-            <div
-              ref={animationContainer}
-              className="w-8 h-8 cursor-pointer"
-            >
+            <div className="w-8 h-8 cursor-pointer" onClick={toggleMenu}>
+              <Lottie
+                animationData={menuBarsAnimation}
+                loop={false}
+                autoplay={false}
+                lottieRef={lottieRef}
+              />
             </div>
           </div>
         </div>

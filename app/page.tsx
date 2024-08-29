@@ -58,8 +58,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="text-xltgreen">
-        <Wave />
+      <div className="wave-margin text-xltgreen z-40">
+        <Wave/>
       </div>
       <div className="pt-10 sm:pt-0 bg-xltgreen">
         <div className="container max-w-screen-lg px-5 sm:px-10">
