@@ -209,9 +209,9 @@ export default function Nav() {
                     Locations
                   </Link>
                 </li>
-                <li className={pathname === '/rewards' ? 'active' : 'my-5'}>
-                  <Link href="/rewards" className="underline-btn-lg">
-                    Rewards
+                <li className={pathname === '/media' ? 'active' : 'my-5'}>
+                  <Link href="/media" className="underline-btn-lg">
+                    Media
                   </Link>
                 </li>
                 <li className={pathname === '/swag' ? 'active' : 'my-5'}>
