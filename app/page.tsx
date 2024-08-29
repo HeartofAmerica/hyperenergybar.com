@@ -93,7 +93,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="pt-10 sm:pt-28">
+      <div className="pt-10 sm:pt-28 pb-10">
         <div className="container max-w-screen-lg px-5 sm:px-10">
           <div className="text-center">
             <h2 className="obvi-lg mb-5 sm:mb-10">
