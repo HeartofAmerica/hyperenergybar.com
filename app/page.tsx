@@ -66,7 +66,7 @@ export default function Home() {
                 The search for energy is over
               </h1>
               <p className="text-sm sm:text-xl mb-5 sm:mb-10 sm:mr-20">
-                While traditional coffee bars just exist, Hyper Energy Bars® exist with a vibe of energetic differentiation. Hyper Energy Bar’s® hand-crafted coffee and infused energy drinks are sure to keep you hyped at any point throughout your day.
+                While traditional coffee bars just exist, Hyper Energy Bars® exist with a vibe of energetic differentiation. Hyper Energy Bar’s® hand-crafted coffee and infused energy drinks are sure to keep you hyped.
               </p>
               <a href="/menu" className="btn">
                 View Menu
