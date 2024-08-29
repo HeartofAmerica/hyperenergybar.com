@@ -32,7 +32,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="grid md:grid-cols-2 gap-10">
+            <div className="grid md:grid-cols-2 gap-5 md:gap-10">
               <div className="block">
                 <h3 className="obvi-2sm text-ltgreen mb-2">
                   MENU

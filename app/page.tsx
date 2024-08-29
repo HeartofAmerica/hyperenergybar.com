@@ -105,8 +105,8 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="grid lg:grid-cols-3 gap-5 lg:gap-20">
-            <Link href="/menu/hyper-infused-energy" className="card pb-10 lg:pb-20 group">
+          <div className="grid lg:grid-cols-3 gap-5 lg:gap-10">
+            <Link href="/menu/hyper-infused-energy" className="card group">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/adrenaline-junkie.png"
@@ -120,7 +120,7 @@ export default function Home() {
               </div>
               <h3 className="underline-btn-lg">Hyper-Infused Energy</h3>
             </Link>
-            <Link href="/menu/smoothies" className="card pb-10 lg:pb-20 group">
+            <Link href="/menu/smoothies" className="card group">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/lazy-river.png"
@@ -134,7 +134,7 @@ export default function Home() {
               </div>
               <h3 className="underline-btn-lg">Smoothies</h3>
             </Link>
-            <Link href="/menu/coffee" className="card pb-10 lg:pb-20 group">
+            <Link href="/menu/coffee" className="card group">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/toasted-coaster.png"
@@ -154,7 +154,7 @@ export default function Home() {
       <div className="text-xltgreen z-40">
         <Wave/>
       </div>
-      <div className="pt-10 sm:-mt-10 bg-xltgreen">
+      <div className="pt-10 sm:pt-0 sm:-mt-12 bg-xltgreen">
         <div className="container max-w-screen-lg px-5 sm:px-10">
           <div className="sm:grid grid-cols-2 sm:gap-20 sm:flex sm:items-center">
             <div className="block">
