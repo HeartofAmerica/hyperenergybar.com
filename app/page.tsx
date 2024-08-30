@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Nav from '@/components/nav';
 import Wave from '@/components/wave';
 import WaveBottom from '@/components/wave-bottom';
+import ContinuousSwiper from '@/components/continuous-swiper';
 import Footer from '@/components/footer';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -246,17 +247,31 @@ export default function Home() {
       <div className="text-xltgreen">
         <WaveBottom />
       </div>
-      <div className="py-20 sm:py-40">
+      <div className="pt-10 pb-10 sm:pt-10 sm:pb-20">
+        <div className="container max-w-screen-xl px-5 sm:px-10">
+          <div className="text-center">
+            <div className="btn-black">
+              CONNECT WITH US
+            </div>
+            <h2 className="obvi-md mb-5 sm:mb-10">
+              @hyperenergybar
+            </h2>
+          </div>
+        </div>
+        <ContinuousSwiper />
         <div className="container max-w-screen-xl px-5 sm:px-10">
           <div className="text-center">
             <h2 className="obvi-md mb-5 sm:mb-10">
-              Connect with us
+              #GETHYPED
             </h2>
             <a href="https://www.instagram.com/hyperenergybar/" target="_blank" className="btn">
               Follow us
             </a>
           </div>
         </div>
+      </div>
+      <div className="text-darkgreen -mb-2 lg:-mb-14 z-40">
+        <Wave/>
       </div>
       <Footer/>
     </>
