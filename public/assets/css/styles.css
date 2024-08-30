@@ -113,11 +113,14 @@ h1, h2, h3, h4, h5 {
   font-size: 2.5vw;
 }
 
-
 @media (min-width: 768px) {
   .obvi-ab {
     font-size: 1.4vw;
   }
+}
+
+.mx-ab {
+  margin: 0 1.6vw;
 }
 
 .btn {
