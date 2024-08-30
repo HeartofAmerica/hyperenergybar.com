@@ -466,6 +466,10 @@ h1, h2, h3, h4, h5 {
   height: auto;
 }
 
+.wave-margin {
+  margin-top: -72px;
+}
+
 @media (min-width: 768px) {
   .wave-margin {
     margin-top: -112px;
