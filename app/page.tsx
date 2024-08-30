@@ -29,7 +29,7 @@ export default function Home() {
     gsap.registerPlugin(ScrollTrigger);
     gsap.fromTo(
       '.scroll-img-left',
-      { y: -270 },
+      { y: -540 },
       {
         y: 0,
         ease: 'power2.out',
@@ -81,7 +81,7 @@ export default function Home() {
                 width={540}
                 height={720}
                 alt="Hyper Energy Bar Spaceshot"
-                className="absolute left-img left-[-50px] top-[-20px] z-20 scroll-img-left"
+                className="absolute left-img left-[-50px] top-[20px] z-20 scroll-img-left"
               />
               <Image
                 src="/assets/img/bubble-gum-full.png"
