@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Nav from '@/components/nav';
+import Wave from '@/components/wave';
 import Footer from '@/components/footer';
 
 export default function Smoothies() {
@@ -83,6 +84,9 @@ export default function Smoothies() {
           </div>
         </div>
       </div>
+      <div className="text-green bg-xltgreen -mb-2 lg:-mb-14 z-40">
+        <Wave/>
+      </div>
       <div className="py-10 lg:py-20 bg-green">
         <div className="container max-w-screen-lg px-5 lg:px-10">
           <h2 className="obvi-lg mb-5 lg:mb-10 text-ltgreen text-center">
@@ -99,7 +103,7 @@ export default function Smoothies() {
                   alt="Hyper Energy Bar Hyper-Infused Energy"
                   className="featured-img"
                 />
-                <div className="circle-lg bg-ltgreen"></div>
+                <div className="circle-lg bg-white/25"></div>
               </div>
               <h3 className="underline-btn-ltgreen-lg">Hyper-Infused Energy</h3>
             </Link>
@@ -113,7 +117,7 @@ export default function Smoothies() {
                   alt="Hyper Energy Bar Coffee"
                   className="featured-img"
                 />
-                <div className="circle-lg bg-ltgreen"></div>
+                <div className="circle-lg bg-white/25"></div>
               </div>
               <h3 className="underline-btn-ltgreen-lg">Coffee</h3>
             </Link>
@@ -127,7 +131,7 @@ export default function Smoothies() {
                   alt="Hyper Energy Bar Snacks"
                   className="featured-img"
                 />
-                <div className="circle-lg bg-ltgreen"></div>
+                <div className="circle-lg bg-white/25"></div>
               </div>
               <h3 className="underline-btn-ltgreen-lg">Snacks</h3>
             </Link>

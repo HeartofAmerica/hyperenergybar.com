@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Nav from '@/components/nav';
+import Wave from '@/components/wave';
 import Footer from '@/components/footer';
 
 export default function Snacks() {
@@ -34,7 +35,7 @@ export default function Snacks() {
                   alt="Hyper Energy Bar Chocolate Chip Muffin Tops"
                   className="featured-img"
                 />
-                <div className="circle-lg bg-strawberry"></div>
+                <div className="circle-lg bg-ltgreen"></div>
               </div>
               <h3 className="underline-btn-lg">Chocolate Chip Muffin Tops</h3>
             </Link>
@@ -48,7 +49,7 @@ export default function Snacks() {
                   alt="Hyper Energy Bar Chocolate Chip Muffin Tops"
                   className="featured-img"
                 />
-                <div className="circle-lg bg-strawberry"></div>
+                <div className="circle-lg bg-ltgreen"></div>
               </div>
               <h3 className="underline-btn-lg">Lemon Poppy Seed Muffin Tops</h3>
             </Link>
@@ -62,12 +63,15 @@ export default function Snacks() {
                   alt="Hyper Energy Bar Crème brûlée Muffin Tops"
                   className="featured-img"
                 />
-                <div className="circle-lg bg-strawberry"></div>
+                <div className="circle-lg bg-ltgreen"></div>
               </div>
               <h3 className="underline-btn-lg">Crème brûlée Muffin Tops</h3>
             </Link>
           </div>
         </div>
+      </div>
+      <div className="text-green bg-xltgreen -mb-2 lg:-mb-14 z-40">
+        <Wave/>
       </div>
       <div className="py-10 lg:py-20 bg-green">
         <div className="container max-w-screen-lg px-5 lg:px-10">
@@ -85,7 +89,7 @@ export default function Snacks() {
                   alt="Hyper Energy Bar Hyper-Infused Energy"
                   className="featured-img"
                 />
-                <div className="circle-lg bg-ltgreen"></div>
+                <div className="circle-lg bg-white/25"></div>
               </div>
               <h3 className="underline-btn-ltgreen-lg">Hyper-Infused Energy</h3>
             </Link>
@@ -99,7 +103,7 @@ export default function Snacks() {
                   alt="Hyper Energy Bar Smoothies"
                   className="featured-img"
                 />
-                <div className="circle-lg bg-ltgreen"></div>
+                <div className="circle-lg bg-white/25"></div>
               </div>
               <h3 className="underline-btn-ltgreen-lg">Smoothies</h3>
             </Link>
@@ -113,7 +117,7 @@ export default function Snacks() {
                   alt="Hyper Energy Bar Coffee"
                   className="featured-img"
                 />
-                <div className="circle-lg bg-ltgreen"></div>
+                <div className="circle-lg bg-white/25"></div>
               </div>
               <h3 className="underline-btn-ltgreen-lg">Coffee</h3>
             </Link>

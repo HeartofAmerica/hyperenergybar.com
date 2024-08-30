@@ -94,14 +94,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="pt-10 sm:pt-28 pb-10">
+      <div className="pt-10 sm:pt-28 pb-10 sm:pb-20">
         <div className="container max-w-screen-lg px-5 sm:px-10">
           <div className="text-center">
             <h2 className="obvi-lg mb-5 sm:mb-10">
               EXPLORE OUR FLAVORS
             </h2>
             <div className="max-w-screen-sm mx-auto">
-              <p className="text-sm sm:text-xl mb-10 sm:mb-20">
+              <p className="text-sm sm:text-xl mb-5 sm:mb-10">
                 While traditional coffee bars just exist, Hyper Energy Bars® exist with a vibe of energetic differentiation. Hyper Energy Bar’s® hand-crafted coffee and infused energy drinks are sure to keep you hyped.
               </p>
             </div>

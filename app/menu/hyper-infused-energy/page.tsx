@@ -197,10 +197,10 @@ export default function HyperInfusedEnergy() {
           </div>
         </div>
       </div>
-      <div className="bg-xltgreen text-green">
-        <Wave />
+      <div className="text-green bg-xltgreen -mb-2 lg:-mb-14 z-40">
+        <Wave/>
       </div>
-      <div className="pt-5 lg:pt-10 pb-20 sm:pb-40 bg-green -mt-1">
+      <div className="pt-5 lg:pt-10 pb-20 sm:pb-40 bg-green">
         <div className="container max-w-screen-lg px-5 lg:px-10">
           <h2 className="obvi-lg mb-5 lg:mb-10 text-ltgreen text-center">
             Explore More

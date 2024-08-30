@@ -38,7 +38,7 @@ export default function PinkPowder() {
           </div>
         </div>
       </div>
-      <div className="wave-margin text-pinkpowder z-40">
+      <div className="text-pinkpowder bg-pinkpowder/25 z-40">
         <Wave />
       </div>
       <div className="-mt-2 bg-pinkpowder py-20 sm:py-40">
