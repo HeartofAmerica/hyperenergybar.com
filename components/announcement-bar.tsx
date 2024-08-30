@@ -44,7 +44,7 @@ export default function AnnouncementBar() {
             <div className="obvi-ab text-center hidden sm:block">
               CHECK OUT THE NEW FALL SPECIALS MENU
             </div>
-            <div className="mx-ab sm:mx-10 text-green w-8 h-8">
+            <div className="mx-ab sm:mx-10 text-green w-8 h-8 hidden sm:block">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 216" fill="currentColor">
                 <path d="M0,108c59.65,0,108-48.35,108-108,0,59.65,48.35,108,108,108-59.65,0-108,48.35-108,108,0-59.65-48.35-108-108-108Z"/>
               </svg>
@@ -69,7 +69,7 @@ export default function AnnouncementBar() {
             <div className="obvi-ab text-center hidden sm:block">
               CHECK OUT THE NEW FALL SPECIALS MENU
             </div>
-            <div className="mx-ab sm:mx-10 text-green w-8 h-8">
+            <div className="mx-ab sm:mx-10 text-green w-8 h-8 hidden sm:block">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 216" fill="currentColor">
                 <path d="M0,108c59.65,0,108-48.35,108-108,0,59.65,48.35,108,108,108-59.65,0-108,48.35-108,108,0-59.65-48.35-108-108-108Z"/>
               </svg>
