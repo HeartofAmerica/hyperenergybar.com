@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Nav from '@/components/nav';
+import Wave from '@/components/wave';
 import Footer from '@/components/footer';
 
 export default function Menu() {
@@ -81,6 +82,9 @@ export default function Menu() {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="text-darkgreen bg-xltgreen -mb-2 lg:-mb-14 z-40">
+        <Wave/>
       </div>
       <Footer/>
     </>

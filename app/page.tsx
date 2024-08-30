@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Nav from '@/components/nav';
+import AnnouncementBar from '@/components/announcement-bar';
 import Wave from '@/components/wave';
 import WaveBottom from '@/components/wave-bottom';
 import ContinuousSwiper from '@/components/continuous-swiper';
@@ -59,7 +60,7 @@ export default function Home() {
   return (
     <>
       <Nav/>
-      <div className="hero-bg hero">
+      <div className="hero-bg hero relative">
         <div className="container max-w-screen-xl px-5 sm:px-10">
           <div className="lg:grid grid-cols-2 lg:gap-40">
             <div className="pb-20 lg:pb-0">
@@ -92,6 +93,9 @@ export default function Home() {
               />
             </div>
           </div>
+        </div>
+        <div className="container max-w-screen-xl px-5 sm:px-10 z-40 absolute bottom-5">
+          <AnnouncementBar/>
         </div>
       </div>
       <div className="pt-10 sm:pt-28 pb-10 sm:pb-20">
