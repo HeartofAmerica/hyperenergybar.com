@@ -217,7 +217,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="pt-10 pb-10 sm:pt-20 sm:pb-0 bg-xltgreen">
+      <div className="pt-10 pb-10 sm:pt-20 sm:pb-5 bg-xltgreen">
         <div className="container max-w-screen-lg px-5 sm:px-10">
           <div className="sm:grid grid-cols-2 sm:gap-20 sm:flex sm:items-center">
             <div className="block">
@@ -253,7 +253,7 @@ export default function Home() {
             <div className="btn-black">
               CONNECT WITH US
             </div>
-            <h2 className="obvi-md mb-5 sm:mb-10">
+            <h2 className="obvi-md">
               @hyperenergybar
             </h2>
           </div>
