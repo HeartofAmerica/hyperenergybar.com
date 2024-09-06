@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { GoogleReCaptchaProvider, useGoogleReCaptcha } from 'react-google-recaptcha-v3';
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 export default function ContactForm() {
   const [firstName, setFirstName] = useState<string>('');
@@ -10,7 +10,7 @@ export default function ContactForm() {
   const [location, setLocation] = useState<string>('');
   const [message, setMessage] = useState<string>('');
   const [status, setStatus] = useState<string>('');
-  const { executeRecaptcha } = useGoogleReCaptcha(); // Hook for reCAPTCHA
+  const { executeRecaptcha } = useGoogleReCaptcha();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -22,9 +22,9 @@ export default function ContactForm() {
       return;
     }
 
-    const recaptchaToken = await executeRecaptcha('contact_form');
-
     try {
+      const recaptchaToken = await executeRecaptcha('contact_form');
+
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -48,9 +48,12 @@ export default function ContactForm() {
         setLocation('');
         setMessage('');
       } else {
+        const errorData = await response.json();
+        console.error('Server Error:', errorData);
         setStatus('error');
       }
     } catch (error) {
+      console.error('Fetch Error:', error);
       setStatus('error');
     }
   };
