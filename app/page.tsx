@@ -65,7 +65,7 @@ export default function Home() {
           <div className="lg:grid grid-cols-2 lg:gap-40">
             <div className="pb-20 lg:pb-0">
               <h1 className="obvi-xl mb-5 sm:mb-10">
-                The search for energy is over
+                {heroTitle}
               </h1>
               <p className="text-sm sm:text-xl mb-5 sm:mb-10 sm:mr-20">
                 While traditional coffee bars just exist, Hyper Energy Bars® exist with a vibe of energetic differentiation. Hyper Energy Bar’s® hand-crafted coffee and infused energy drinks are sure to keep you hyped.

@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5 {
   font-size: 16px;
   color: #fff;
   background: var(--green);
-  padding: 6px 22px 10px 22px;
+  padding: 6px 22px 11px 22px;
   border-radius: 999px;
   transition: all ease 0.3s;
 }
