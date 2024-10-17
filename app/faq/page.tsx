@@ -14,7 +14,7 @@ export default function FAQ() {
       <div className="hero-gradient-1 relative overflow-hidden">
         <div className="container max-w-screen-xl">
           <div className="sm:grid sm:grid-cols-2 sm:gap-10 sm:flex items-center">
-            <div className="pt-20 sm:pt-10 sm:pb-20 mx-5 sm:mx-10">
+            <div className="pt-28 sm:pt-10 sm:pb-20 mx-5 sm:mx-10">
               <h1 className="obvi-xl mb-5 sm:mb-10">
                 FAQs
               </h1>

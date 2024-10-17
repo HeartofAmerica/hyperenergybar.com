@@ -114,20 +114,20 @@ export default function Footer() {
       <div className="py-5 bg-xdarkgreen">
         <div className="container max-w-screen-xl px-5 lg:px-10">
           <div className="grid md:grid-cols-2 gap-10">
-            <div className="text-white">
-              © 2024 Hyper Energy Bar
+            <div className="text-ltgreen obvi-xs">
+              Hyper Energy Bar® 2024
             </div>
-            <div className="text-white lg:text-right">
-              <a href="https://cws.givex.com/cws4.0/heartofamerica/check-balance/" target="_blank" className="text-white hover:text-green trasition-all duration-300 mr-2 lg:ml-5">
+            <div className="lg:text-right">
+              <a href="https://cws.givex.com/cws4.0/heartofamerica/check-balance/" target="_blank" className="text-ltgreen obvi-xs hover:text-green trasition-all duration-300 mr-2 lg:ml-5">
                 Gift Cards
               </a>
-              <Link href="/review-us" className="text-white hover:text-green trasition-all duration-300 mr-2 lg:ml-5">
+              <Link href="/review-us" className="text-ltgreen obvi-xs hover:text-green trasition-all duration-300 mr-2 lg:ml-5">
                 Review Us
               </Link>
-              <Link href="/development" className="text-white hover:text-green trasition-all duration-300 mr-2 lg:ml-5">
+              <Link href="/development" className="text-ltgreen obvi-xs hover:text-green trasition-all duration-300 mr-2 lg:ml-5">
                 Development
               </Link>
-              <Link href="/privacy-policy" className="text-white hover:text-green trasition-all duration-300 mr-2 lg:ml-5">
+              <Link href="/privacy-policy" className="text-ltgreen obvi-xs hover:text-green trasition-all duration-300 mr-2 lg:ml-5">
                 Privacy Policy
               </Link>
             </div>

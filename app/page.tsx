@@ -27,34 +27,42 @@ export default function Home() {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
+  
     gsap.fromTo(
       '.scroll-img-left',
       { y: -540 },
       {
         y: 0,
         ease: 'power2.out',
+        immediateRender: true,
         scrollTrigger: {
           trigger: '.hero',
           start: 'top bottom',
           end: 'bottom top',
           scrub: true,
+          invalidateOnRefresh: true,
         },
       }
     );
+  
     gsap.fromTo(
       '.scroll-img-right',
       { y: 540 },
       {
         y: 0,
         ease: 'power2.out',
+        immediateRender: true,
         scrollTrigger: {
           trigger: '.hero',
           start: 'top bottom',
           end: 'bottom top',
           scrub: true,
+          invalidateOnRefresh: true,
         },
       }
     );
+  
+    ScrollTrigger.refresh();
   }, []);
 
   return (
@@ -62,19 +70,19 @@ export default function Home() {
       <Nav/>
       <div className="hero-bg hero relative">
         <div className="container max-w-screen-xl px-5 sm:px-10">
-          <div className="lg:grid grid-cols-2 lg:gap-40">
+          <div className="md:grid grid-cols-2 md:gap-20">
             <div className="pb-20 lg:pb-0">
               <h1 className="obvi-xl mb-5 sm:mb-10">
-                {heroTitle}
+                The search for energy is over
               </h1>
               <p className="text-sm sm:text-xl mb-5 sm:mb-10 sm:mr-20">
-                While traditional coffee bars just exist, Hyper Energy Bars® exist with a vibe of energetic differentiation. Hyper Energy Bar’s® hand-crafted coffee and infused energy drinks are sure to keep you hyped.
+                While traditional coffee bars simply exist, Hyper Energy Bars® offer an energetic experience that sets us apart. Our hand-crafted coffee and infused energy drinks are designed to keep you energized and hyped throughout the day.
               </p>
               <a href="/menu" className="btn">
                 View Menu
               </a>
             </div>
-            <div className="relative">
+            <div className="relative fade-element">
               <Image
                 src="/assets/img/spaceshot-full.png"
                 quality={100}
@@ -106,7 +114,7 @@ export default function Home() {
             </h2>
             <div className="max-w-screen-sm mx-auto">
               <p className="text-sm sm:text-xl mb-5 sm:mb-10">
-                While traditional coffee bars just exist, Hyper Energy Bars® exist with a vibe of energetic differentiation. Hyper Energy Bar’s® hand-crafted coffee and infused energy drinks are sure to keep you hyped.
+                Whether you’re looking for a refreshing energy drink to kickstart your day, a delicious smoothie packed with nutrients, or a rich cup of hand-crafted coffee to savor, we have something for everyone. Discover the perfect drink to fuel your active lifestyle!
               </p>
             </div>
           </div>
@@ -239,7 +247,7 @@ export default function Home() {
                 Find us
               </h3>
               <p className="text-sm sm:text-xl mb-5 sm:mb-10">
-                At Hyper we strive for more than just providing your drink exactly as you like, we strive to hype up your day. Our Energistas® cue up their favorite playlists, crank up the volume and sling your drinks with flair.
+                With multiple locations throughout the Des Moines area and our newest spot in Iowa City, you can easily find us to experience our hand-crafted beverages and uplifting atmosphere. Check out our locations page to find the nearest Hyper Energy Bar® and join us for a taste of our unique flavors today!
               </p>
               <Link href="/locations" className="btn">
                 Explore Locations

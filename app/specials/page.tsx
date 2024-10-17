@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Nav from '@/components/nav';
+import Wave from '@/components/wave';
 import Footer from '@/components/footer';
 
 export default function Specials() {
@@ -195,6 +196,9 @@ export default function Specials() {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="text-green bg-xltgreen -mb-2 lg:-mb-14 z-40">
+        <Wave/>
       </div>
       <div className="py-10 lg:py-20 bg-green">
         <div className="container max-w-screen-lg px-5 lg:px-10">

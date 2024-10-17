@@ -51,89 +51,91 @@ export default function Nav() {
       <nav
         className={`nav bg-white fixed top-0 left-0 right-0 mx-3 mt-3 rounded-3xl z-50 px-10 hidden md:block ${isMenuOpen ? 'menu-open' : ''}`}
       >
-        <div className="flex justify-between items-center">
-          <ul className="flex space-x-10">
-            <li
-              onMouseEnter={handleMouseEnterMenu}
-              onMouseLeave={handleMouseLeaveMenu}
-              className={pathname === '/menu' ? 'active' : ''}
-            >
-              <Link href="/menu" className="underline-btn menu-link drop-down">
-                Menu
-              </Link>
-              <div
-                className={`menu-grid grid grid-cols-4 gap-4 pt-4 lg:pt-8 absolute left-0 right-0 mx-3 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+        <div className="grid grid-cols-3 items-center">
+          <div className="flex justify-start">
+            <ul className="flex space-x-10">
+              <li
+                onMouseEnter={handleMouseEnterMenu}
+                onMouseLeave={handleMouseLeaveMenu}
+                className={pathname === '/menu' ? 'active' : ''}
               >
-                <Link href="/menu/hyper-infused-energy" className="card pb-10 lg:pb-20">
-                  <div className="circle-wrap text-center">
-                    <Image
-                      src="/assets/img/bubble-gum.png"
-                      quality={100}
-                      width={540}
-                      height={720}
-                      alt="Hyper Energy Bar Logo"
-                      className="featured-img"
-                    />
-                    <div className="circle"></div>
-                  </div>
-                  <h3 className="underline-btn">Hyper-Infused Energy</h3>
+                <Link href="/menu" className="underline-btn menu-link drop-down">
+                  Menu
                 </Link>
-                <Link href="/menu/smoothies" className="card pb-10 lg:pb-20">
-                  <div className="circle-wrap text-center">
-                    <Image
-                      src="/assets/img/lazy-river.png"
-                      quality={100}
-                      width={540}
-                      height={720}
-                      alt="Hyper Energy Bar Logo"
-                      className="featured-img"
-                    />
-                    <div className="circle"></div>
-                  </div>
-                  <h3 className="underline-btn">Smoothies</h3>
+                <div
+                  className={`menu-grid grid grid-cols-4 gap-4 pt-4 lg:pt-8 absolute left-0 right-0 mx-3 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+                >
+                  <Link href="/menu/hyper-infused-energy" className="card pb-10 lg:pb-20">
+                    <div className="circle-wrap text-center">
+                      <Image
+                        src="/assets/img/bubble-gum.png"
+                        quality={100}
+                        width={540}
+                        height={720}
+                        alt="Hyper Energy Bar Logo"
+                        className="featured-img"
+                      />
+                      <div className="circle"></div>
+                    </div>
+                    <h3 className="underline-btn">Hyper-Infused Energy</h3>
+                  </Link>
+                  <Link href="/menu/smoothies" className="card pb-10 lg:pb-20">
+                    <div className="circle-wrap text-center">
+                      <Image
+                        src="/assets/img/lazy-river.png"
+                        quality={100}
+                        width={540}
+                        height={720}
+                        alt="Hyper Energy Bar Logo"
+                        className="featured-img"
+                      />
+                      <div className="circle"></div>
+                    </div>
+                    <h3 className="underline-btn">Smoothies</h3>
+                  </Link>
+                  <Link href="/menu/coffee" className="card pb-10 lg:pb-20">
+                    <div className="circle-wrap text-center">
+                      <Image
+                        src="/assets/img/toasted-coaster.png"
+                        quality={100}
+                        width={540}
+                        height={720}
+                        alt="Hyper Energy Bar Logo"
+                        className="featured-img"
+                      />
+                      <div className="circle"></div>
+                    </div>
+                    <h3 className="underline-btn">Coffee</h3>
+                  </Link>
+                  <Link href="/menu/snacks" className="card pb-10 lg:pb-20">
+                    <div className="circle-wrap text-center">
+                      <Image
+                        src="/assets/img/snacks.png"
+                        quality={100}
+                        width={540}
+                        height={720}
+                        alt="Hyper Energy Bar Logo"
+                        className="featured-img"
+                      />
+                      <div className="circle"></div>
+                    </div>
+                    <h3 className="underline-btn">Snacks</h3>
+                  </Link>
+                </div>
+              </li>
+              <li className={pathname === '/specials' ? 'active' : ''}>
+                <Link href="/specials" className="underline-btn">
+                  Specials
                 </Link>
-                <Link href="/menu/coffee" className="card pb-10 lg:pb-20">
-                  <div className="circle-wrap text-center">
-                    <Image
-                      src="/assets/img/toasted-coaster.png"
-                      quality={100}
-                      width={540}
-                      height={720}
-                      alt="Hyper Energy Bar Logo"
-                      className="featured-img"
-                    />
-                    <div className="circle"></div>
-                  </div>
-                  <h3 className="underline-btn">Coffee</h3>
+              </li>
+              <li className={pathname === '/locations' ? 'active' : ''}>
+                <Link href="/locations" className="underline-btn">
+                  Locations
                 </Link>
-                <Link href="/menu/snacks" className="card pb-10 lg:pb-20">
-                  <div className="circle-wrap text-center">
-                    <Image
-                      src="/assets/img/snacks.png"
-                      quality={100}
-                      width={540}
-                      height={720}
-                      alt="Hyper Energy Bar Logo"
-                      className="featured-img"
-                    />
-                    <div className="circle"></div>
-                  </div>
-                  <h3 className="underline-btn">Snacks</h3>
-                </Link>
-              </div>
-            </li>
-            <li className={pathname === '/specials' ? 'active' : ''}>
-              <Link href="/specials" className="underline-btn">
-                Specials
-              </Link>
-            </li>
-            <li className={pathname === '/locations' ? 'active' : ''}>
-              <Link href="/locations" className="underline-btn">
-                Locations
-              </Link>
-            </li>
-          </ul>
-          <div className="flex justify-center items-center">
+              </li>
+            </ul>
+          </div>
+          <div className="flex justify-center">
             <Link href="/">
               <Image
                 src="/assets/img/Hyper-Energy-Bar-Logo.svg"
@@ -141,27 +143,29 @@ export default function Nav() {
                 width={177}
                 height={72}
                 alt="Hyper Energy Bar Logo"
-                className="py-4"
+                className="py-3"
               />
             </Link>
           </div>
-          <ul className="flex space-x-10">
-            <li className={pathname === '/media' ? 'active' : ''}>
-              <Link href="/media" className="underline-btn">
-                Media
-              </Link>
-            </li>
-            <li>
-              <a href="https://hyperenergybar.myshopify.com/" target="_blank" className="underline-btn">
-                Swag
-              </a>
-            </li>
-            <li className={pathname === '/catering' ? 'active' : ''}>
-              <Link href="/catering" className="underline-btn">
-                Catering
-              </Link>
-            </li>
-          </ul>
+          <div className="flex justify-end">
+            <ul className="flex space-x-10">
+              <li className={pathname === '/media' ? 'active' : ''}>
+                <Link href="/media" className="underline-btn">
+                  Media
+                </Link>
+              </li>
+              <li>
+                <a href="https://hyperenergybar.myshopify.com/" target="_blank" className="underline-btn">
+                  Swag
+                </a>
+              </li>
+              <li className={pathname === '/catering' ? 'active' : ''}>
+                <Link href="/catering" className="underline-btn">
+                  Catering
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <nav

@@ -271,7 +271,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav {
-  height: 104px;
+  height: 96px;
   transition: all ease 0.3s;
   overflow: hidden;
 }
@@ -424,7 +424,7 @@ h1, h2, h3, h4, h5 {
 
 .hero-bg {
   padding: 120px 0;
-  background-image: url('/assets/img/hyper-energy-bar-hero.png');
+  background-image: url('/assets/img/hyper-energy-bar-hero.jpg');
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -504,7 +504,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .image-bottom {
-  top: 50%; /* Adjust this value for stagger effect */
+  top: 50%;
   transform: translateY(10%);
 }
 
@@ -512,7 +512,22 @@ h1, h2, h3, h4, h5 {
   transition-timing-function: linear !important;
 }
 
+.scroll-img-left,
+.scroll-img-right {
+  will-change: transform;
+}
 
+.fade-element {
+  opacity: 0;
+  animation: fadeIn 0.4s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 
 
 
