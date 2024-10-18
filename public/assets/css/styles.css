@@ -70,6 +70,7 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 28px;
+  line-height: 110%;
 }
 
 @media (min-width: 768px) {
@@ -133,6 +134,7 @@ h1, h2, h3, h4, h5 {
   padding: 6px 22px 11px 22px;
   border-radius: 999px;
   transition: all ease 0.3s;
+  display: inline-block;
 }
 
 .btn:hover {
@@ -442,6 +444,25 @@ h1, h2, h3, h4, h5 {
   background-image: url('/assets/img/gradient-green-blue-yellow.png');
   background-size: cover;
   background-position: center;
+}
+
+.hero-fall-specials {
+  background-image: url('/assets/img/gradient-forrest.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-home-specials {
+  background-image: url('/assets/img/bg-home-specials.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 420px;
+}
+
+@media (min-width: 1024px) {
+  .bg-home-specials {
+    height: auto;
+  }
 }
 
 .white-card {

@@ -122,7 +122,7 @@ export default function Home() {
             <Link href="/menu/hyper-infused-energy" className="card group">
               <div className="circle-wrap-lg text-center">
                 <Image
-                  src="/assets/img/adrenaline-junkie.png"
+                  src="/assets/img/bubble-gum.png"
                   quality={100}
                   width={540}
                   height={720}
@@ -192,23 +192,15 @@ export default function Home() {
         </div>
       </div>
       <div className="sm:grid grid-cols-2 sm:gap-0">
-        <div className="bg-pinkpowder">
+        <div className="bg-home-specials">
           <div className="pt-8 pb-4 sm:pt-12 sm:pb-4 text-center">
-            <h3 className="obvi-md mb-5">
+            <h3 className="obvi-md text-neon mb-5">
               Fall Specials
             </h3>
             <Link href="/specials" className="btn-white">
               View Menu
             </Link>
           </div>
-          <Image
-            src="/assets/img/fall-specials-featured-img.png"
-            quality={100}
-            width={960}
-            height={540}
-            alt="Hyper Energy Bar Fall Specials"
-            className="mx-auto"
-          />
         </div>
         <div className="bg-green">
           <div className="pt-8 pb-4 sm:pt-12 sm:pb-4 text-center">
@@ -277,7 +269,12 @@ export default function Home() {
               #GETHYPED
             </h2>
             <a href="https://www.instagram.com/hyperenergybar/" target="_blank" className="btn">
-              Follow us
+              <div className="flex items-center">
+                <div className="block pt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 216" fill="currentColor" className="w-4 lg:w-8 h-4 lg:h-8 mr-2"><path d="m108.1,0c-29.4,0-33.1.1-44.6.6-11.5.6-19.4,2.4-26.2,5.1-7.2,2.7-13.7,7-19.1,12.5-5.5,5.4-9.7,11.9-12.5,19.1-2.7,6.8-4.5,14.7-5.1,26.1-.5,11.6-.6,15.3-.6,44.6s.1,33,.6,44.5c.5,11.5,2.3,19.3,5,26.2,2.8,7.1,6.5,13.1,12.5,19.1s12,9.7,19.1,12.5c6.9,2.7,14.7,4.5,26.2,5,11.6.6,15.3.7,44.6.7s33-.1,44.5-.6,19.4-2.3,26.2-5c7.2-2.7,13.7-7,19.1-12.5,6-6,9.7-12,12.5-19.1,2.7-6.9,4.5-14.7,5-26.2s.6-15.2.6-44.5-.1-33-.6-44.5-2.4-19.3-5-26.2c-2.7-7.2-7-13.7-12.5-19.1-5.4-5.5-11.9-9.8-19.1-12.5-6.9-2.7-14.7-4.5-26.2-5-11.4-.7-15.1-.8-44.4-.8h0Zm-9.8,19.5h9.7c28.8,0,32.3.1,43.6.6,10.5.5,16.3,2.2,20.1,3.7,5,2,8.6,4.3,12.4,8.1,3.8,3.8,6.1,7.4,8.1,12.4,1.5,3.8,3.2,9.5,3.7,20,.5,11.4.6,14.8.6,43.6s-.1,32.3-.6,43.6c-.5,10.5-2.2,16.2-3.7,20-1.7,4.7-4.5,8.9-8.1,12.4-3.8,3.8-7.4,6.1-12.4,8.1-3.8,1.5-9.5,3.2-20,3.7-11.4.5-14.8.6-43.6.6s-32.3-.1-43.6-.6c-10.5-.5-16.2-2.2-20-3.7-4.7-1.7-8.9-4.5-12.4-8.1-3.6-3.5-6.4-7.7-8.1-12.4-1.5-3.8-3.2-9.5-3.7-20-.5-11.4-.6-14.8-.6-43.6s.1-32.2.6-43.6c.5-10.5,2.2-16.3,3.7-20.1,2-5,4.3-8.6,8.1-12.4,3.8-3.8,7.4-6.1,12.4-8.1,3.8-1.5,9.5-3.2,20-3.7,9.8-.4,13.7-.5,33.8-.5,0-.1,0,0,0,0Zm67.5,17.9c-7.2,0-13,5.8-13,13s5.8,13,13,13h0c7.2,0,13-5.8,13-13s-5.9-13-13-13Zm-57.7,15.1c-30.6-.5-55.9,24-56.3,54.6-.5,30.6,24,55.9,54.6,56.3h1.7c30.6-.5,55.1-25.7,54.6-56.3-.5-29.9-24.6-54.1-54.6-54.6Zm0,19.5c19.9,0,36,16.1,36,36s-16.1,36-36,36h0c-19.9,0-36-16.1-36-36s16-36,36-36Z"/></svg>
+                </div>
+                <span>Follow us</span>
+              </div>
             </a>
           </div>
         </div>

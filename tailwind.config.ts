@@ -21,6 +21,7 @@ const config: Config = {
         'screen-xl': '1920px',
       },
       colors: {
+        softgray: '#f4f4f4',
         green: '#8bc8b6',
         ltgreen: '#EFF4E1',
         xltgreen: '#F7FAEE',
@@ -50,6 +51,7 @@ const config: Config = {
         pbclutter: '#B27543',
         caramelcrush: '#F7E2C5',
         rip6: '#EBCA9B',
+        forrest: '#416d45',
       },
       fontFamily: {
         obvi: ['obviously', 'sans-serif'],

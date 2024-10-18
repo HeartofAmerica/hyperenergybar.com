@@ -124,6 +124,9 @@ export default function Snacks() {
           </div>
         </div>
       </div>
+      <div className="text-darkgreen bg-green -mb-2 lg:-mb-14 z-40">
+        <Wave/>
+      </div>
       <Footer/>
     </>
   );
