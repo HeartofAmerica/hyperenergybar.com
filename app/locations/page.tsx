@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Nav from '@/components/nav';
+import Wave from '@/components/wave';
 import Footer from '@/components/footer';
 
 export default function Locations() {
@@ -47,37 +48,6 @@ export default function Locations() {
                   Altoona, IA 50009
                 </p>
                 <a href="https://www.google.com/maps/dir/?api=1&destination=Hyper+Energy+Bar+Altoona,+640+36th+Ave+SW,+Altoona,+IA+50009" target="_blank" className="btn">
-                  Get Directions
-                </a>
-              </div>
-            </div>
-            <div className="white-card">
-              <Image
-                src="/assets/img/hyper-altoona.jpg"
-                quality={100}
-                width={720}
-                height={360}
-                alt="Hyper Energy Bar Ankeny"
-                className="mx-auto"
-              />
-              <div className="white-card-content">
-                <h2 className="obvi-md mb-2 sm:mb-5">
-                  Ankeny
-                </h2>
-                <h3 className="obvi-sm mb-1 sm:mb-2">
-                  Hours
-                </h3>
-                <p className="text-sm sm:text-md mb-2 sm:mb-5">
-                  Coming soon
-                </p>
-                <h3 className="obvi-sm mb-1 sm:mb-2">
-                  Address
-                </h3>
-                <p className="text-sm sm:text-md mb-5 sm:mb-10">
-                  1101 S Ankeny Boulevard <br/>
-                  Ankeny, IA 50023
-                </p>
-                <a href="https://www.google.com/maps/dir/?api=1&destination=1101+S+Ankeny+Boulevard,+Ankeny,+IA+50023" target="_blank" className="btn">
                   Get Directions
                 </a>
               </div>
@@ -212,6 +182,9 @@ export default function Locations() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="text-darkgreen bg-xltgreen -mb-2 lg:-mb-14 z-40">
+        <Wave/>
       </div>
       <Footer/>
     </>

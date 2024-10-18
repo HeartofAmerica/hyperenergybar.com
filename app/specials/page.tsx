@@ -65,7 +65,7 @@ export default function Specials() {
           </div>
           <div className="grid lg:grid-cols-3 gap-5 lg:gap-10">
             <div className="block text-center border-2 border-neon rounded-xl p-6 sm:p-12">
-              <h3 className="text-neon obvi-md mb-2 sm:mb-5">Hikers<br/> Hotcake</h3>
+              <h3 className="text-neon obvi-md mb-2 sm:mb-5">Hikers Hotcake</h3>
               <h3 className="text-neon obvi-sm">Maple | Shortbread</h3>
             </div>
             <div className="block text-center border-2 border-neon rounded-xl p-6 sm:p-12">
@@ -73,7 +73,7 @@ export default function Specials() {
               <h3 className="text-neon obvi-sm">Frozen | Vanilla Bean | Milk</h3>
             </div>
             <div className="block text-center border-2 border-neon rounded-xl p-6 sm:p-12">
-              <h3 className="text-neon obvi-md mb-2 sm:mb-5">Treeline<br/> Chai</h3>
+              <h3 className="text-neon obvi-md mb-2 sm:mb-5">Treeline Chai</h3>
               <h3 className="text-neon obvi-sm">Pumpkin Pie</h3>
             </div>
           </div>
