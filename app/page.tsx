@@ -65,6 +65,34 @@ export default function Home() {
     ScrollTrigger.refresh();
   }, []);
 
+  const imageRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    if (imageRef.current && sectionRef.current) {
+      gsap.fromTo(
+        imageRef.current,
+        { y: 150 }, // Start from the bottom of the box
+        {
+          y: 0, // Move to the top
+          ease: 'power2.out',
+          immediateRender: true,
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top bottom',
+            end: 'bottom top',
+            scrub: true,
+            invalidateOnRefresh: true,
+          },
+        }
+      );
+
+      ScrollTrigger.refresh();
+    }
+  }, []);
+
   return (
     <>
       <Nav/>
@@ -194,7 +222,7 @@ export default function Home() {
       <div className="sm:grid grid-cols-2 sm:gap-0">
         <div className="bg-home-specials">
           <div className="pt-8 pb-4 sm:pt-12 sm:pb-4 text-center">
-            <h3 className="obvi-md text-neon mb-5">
+            <h3 className="obvi-md text-neon mb-6 sm:mb-8">
               Fall Specials
             </h3>
             <Link href="/specials" className="btn-white">
@@ -204,7 +232,7 @@ export default function Home() {
         </div>
         <div className="bg-green">
           <div className="pt-8 pb-4 sm:pt-12 sm:pb-4 text-center">
-            <h3 className="obvi-md text-neon mb-5">
+            <h3 className="obvi-md text-neon mb-6 sm:mb-8">
               Hyper swag
             </h3>
             <a href="https://hyperenergybar.myshopify.com/" target="_blank" className="btn-white">
@@ -221,18 +249,25 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="pt-10 pb-10 sm:pt-20 sm:pb-5 bg-xltgreen">
+      <div ref={sectionRef} className="pt-10 pb-10 sm:pt-20 sm:pb-5 bg-xltgreen">
         <div className="container max-w-screen-lg px-5 sm:px-10">
           <div className="sm:grid grid-cols-2 sm:gap-20 sm:flex sm:items-center">
-            <div className="block">
-              <Image
-                src="/assets/img/hyper-cob.png"
-                quality={100}
-                width={1080}
-                height={1140}
-                alt="Hyper Energy Bar"
-                className="mx-auto mb-5 sm:mb-0"
-              />
+            <div 
+              className="relative rounded-3xl overflow-hidden mx-auto w-full max-w-[720px] h-[400px] sm:h-[540px] bg-green mb-5 sm:mb-0"
+            >
+              <div 
+                className="absolute inset-0"
+                ref={imageRef}
+              >
+                <Image
+                  src="/assets/img/hyper-box.png"
+                  quality={100}
+                  width={1080}
+                  height={1080}
+                  alt="Hyper Energy Bar"
+                  className="object-cover h-full w-full"
+                />
+              </div>
             </div>
             <div className="block">
               <h3 className="obvi-lg mb-5 sm:mb-10">
