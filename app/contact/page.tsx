@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <>
       <Nav/>
-      <div className="pt-36 pb-5 lg:pt-44 lg:pb-20 bg-ltgreen">
+      <div className="pt-36 pb-5 lg:pt-44 lg:pb-20 bg-white">
         <div className="container max-w-screen-lg px-5 lg:px-10 text-center">
           <h1 className="obvi-xl mb-5 lg:mb-10">
             Get in touch
@@ -25,12 +25,12 @@ export default function Contact() {
           </p>
         </div>
       </div>
-      <div className="bg-ltgreen pb-10 sm:pb-20">
+      <div className="bg-white pb-10 sm:pb-20">
         <div className="max-w-screen-md mx-auto px-5 lg:px-10">
           <ContactCap />
         </div>
       </div>
-      <div className="text-green bg-ltgreen -mb-2 lg:-mb-14 z-40">
+      <div className="text-green bg-white -mb-2 lg:-mb-14 z-40">
         <Wave/>
       </div>
       <div className="pb-10 sm:pb-20 bg-green">

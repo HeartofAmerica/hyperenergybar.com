@@ -19,7 +19,7 @@ export default function FAQ() {
                 FAQs
               </h1>
               <p className="text-sm sm:text-xl mb-5 sm:mb-10">
-                Below are some of the most common questions our customers have asked us! If you don't find what you're looking for, please send us an email at hello@hyperenergybar.com
+                Below are some of the most common questions our customers have asked us! If you don't find what you're looking for, please send us an email at <a href="mailto:hello@hyperenergybar.com" className="underline hover:no-underline">hello@hyperenergybar.com</a>
               </p>
             </div>
             <Image

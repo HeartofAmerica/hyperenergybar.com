@@ -36,20 +36,20 @@ const Subscribe = () => {
 
   return (
     <form onSubmit={handleSubmit} className="block">
-      <div className="bg-ltgreen rounded-full flex items-center">
+      <div className="bg-white/10 rounded-full flex items-center">
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="obvi-xs obvi-input px-6 pt-2 pb-3 rounded-3xl bg-ltgreen w-full"
+          className="obvi-xs obvi-input px-6 pt-2 pb-3 rounded-3xl bg-transparent w-full text-white"
         />
         <select
           value={location}
           onChange={(e) => setLocation(e.target.value)}
           required
-          className="obvi-xs text-green obvi-input mt--1 px-6 pt-2 pb-3 rounded-3xl bg-ltgreen w-full mr-5"
+          className="obvi-xs text-green obvi-input mt--1 px-6 pt-2 pb-3 rounded-3xl bg-transparent w-full mr-5"
         >
           <option value="">Location</option>
           <option value="Altoona">Altoona</option>

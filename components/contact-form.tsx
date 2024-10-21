@@ -59,7 +59,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="sm:grid sm:grid-cols-2 gap-5">
+    <form onSubmit={handleSubmit} className="sm:grid sm:grid-cols-2 gap-5 bg-white shadow-xl rounded-3xl p-5 sm:p-10">
       <div className="col-span-1 mb-3 sm:mb-0">
         <p className="obvi-sm mb-2">First Name</p>
         <input
@@ -68,7 +68,7 @@ export default function ContactForm() {
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
           required
-          className="w-full px-5 py-3 rounded-lg"
+          className="w-full px-5 py-3 rounded-lg border border-green/25 hover:border-green focus:border-green transition-all duration-300"
         />
       </div>
       <div className="col-span-1 mb-3 sm:mb-0">
@@ -79,7 +79,7 @@ export default function ContactForm() {
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
           required
-          className="w-full px-5 py-3 rounded-lg"
+          className="w-full px-5 py-3 rounded-lg border border-green/25 hover:border-green focus:border-green transition-all duration-300"
         />
       </div>
       <div className="col-span-1 mb-3 sm:mb-0">
@@ -90,7 +90,7 @@ export default function ContactForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="w-full px-5 py-3 rounded-lg"
+          className="w-full px-5 py-3 rounded-lg border border-green/25 hover:border-green focus:border-green transition-all duration-300"
         />
       </div>
       <div className="col-span-1 mb-3 sm:mb-0">
@@ -99,7 +99,7 @@ export default function ContactForm() {
           value={location}
           onChange={(e) => setLocation(e.target.value)}
           required
-          className="w-full px-5 py-3 rounded-lg"
+          className="w-full px-5 py-3 rounded-lg border border-green/25 hover:border-green focus:border-green transition-all duration-300"
         >
           <option value="" disabled></option>
           <option value="Altoona">Altoona</option>
@@ -116,7 +116,7 @@ export default function ContactForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
-          className="w-full px-5 py-3 rounded-lg"
+          className="w-full px-5 py-3 rounded-lg border border-green/25 hover:border-green focus:border-green transition-all duration-300"
         />
       </div>
       <div className="col-span-2">

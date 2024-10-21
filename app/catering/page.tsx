@@ -159,7 +159,7 @@ export default function Catering() {
               </p>
             </div>
           </div>
-          <div id="order-catering" className="py-20 sm:py-40">
+          <div id="order-catering" className="pt-20 sm:pt-40 pb-5 sm:pb-10">
             <h2 className="obvi-lg mb-5 sm:mb-10 text-center">
               ORDER CATERING
             </h2>
