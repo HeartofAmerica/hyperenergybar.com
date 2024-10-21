@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="py-10 lg:py-20 bg-darkgreen">
+      <footer className="py-10 bg-darkgreen">
         <div className="container max-w-screen-xl px-5 lg:px-10">
           <div className="grid md:grid-cols-2 gap-10">
             <div className="grid md:grid-cols-3 gap-10">
@@ -84,9 +84,9 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/swag" className="obvi-sm text-white hover:text-green trasition-all duration-300 mb-5">
+                    <a href="https://hyperenergybar.myshopify.com/" target="_blank" className="obvi-sm text-white hover:text-green trasition-all duration-300 mb-5">
                       Swag
-                    </Link>
+                    </a>
                   </li>
                   <li>
                     <Link href="/media" className="obvi-sm text-white hover:text-green trasition-all duration-300 mb-5">
@@ -121,18 +121,12 @@ export default function Footer() {
               Hyper Energy Bar® 2024
             </div>
             <div className="lg:text-right">
-              <a href="https://cws.givex.com/cws4.0/heartofamerica/check-balance/" target="_blank" className="text-ltgreen obvi-xs hover:text-green trasition-all duration-300 mr-2 lg:ml-5">
-                Gift Cards
-              </a>
-              <Link href="/review-us" className="text-ltgreen obvi-xs hover:text-green trasition-all duration-300 mr-2 lg:ml-5">
-                Review Us
-              </Link>
-              <Link href="/development" className="text-ltgreen obvi-xs hover:text-green trasition-all duration-300 mr-2 lg:ml-5">
-                Development
-              </Link>
               <Link href="/privacy-policy" className="text-ltgreen obvi-xs hover:text-green trasition-all duration-300 mr-2 lg:ml-5">
                 Privacy Policy
               </Link>
+              <a href="https://cws.givex.com/cws4.0/heartofamerica/check-balance/" target="_blank" className="text-ltgreen obvi-xs hover:text-green trasition-all duration-300 mr-2 lg:ml-5">
+                Gift Cards
+              </a>
             </div>
           </div>
         </div>

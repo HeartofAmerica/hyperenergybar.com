@@ -20,6 +20,9 @@ export default function StickerDrop() {
               <p className="text-sm sm:text-xl mb-5 sm:mb-10">
                 Every first of the month we hand out a new limited sticker design to every customer that purchases a drink until supplies runs out.
               </p>
+              <a href="#submit-a-design" className="btn-white">
+                Submit a design
+              </a>
             </div>
             <Image
               src="/assets/img/hyper-stickers.jpg"
@@ -31,7 +34,7 @@ export default function StickerDrop() {
             />
           </div>
         </div>
-        <div className="wave-margin text-xltgreen z-40 relative -mb-1">
+        <div className="wave-margin text-white z-40 relative -mb-1">
           <Wave />
         </div>
       </div>

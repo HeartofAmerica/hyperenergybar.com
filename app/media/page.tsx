@@ -56,7 +56,7 @@ export default function Media() {
           </div>
         </a>
         <a
-          href=""
+          href="https://subscribe.desmoinesregister.com/restricted?return=https%3A%2F%2Fwww.desmoinesregister.com%2F..." target="_blank"
           className="flex sm:h-[600px] border-b-2 sm:border-r-2 slate-100 bg-white p-5 sm:p-10 transition-all duration-300 hover:bg-[rgba(105,185,164,0.3)] hover:bg-gradient-to-br from-[rgba(105,185,164,0.3)] via-[rgba(239,244,225,0.3)] to-[rgba(255,213,108,0.3)] cursor-pointer"
         >
           <div className="flex flex-col justify-between">
@@ -66,7 +66,7 @@ export default function Media() {
           </div>
         </a>
         <a
-          href=""
+          href="https://www.desmoinesregister.com/story/entertainment/dining/2023/06/21/hyper-energy-bar-opens-new-location-in-urbandale-including-walkup-window/70335873007/" target="_blank"
           className="flex sm:h-[600px] border-b-2 slate-100 bg-white p-5 sm:p-10 transition-all duration-300 hover:bg-[rgba(105,185,164,0.3)] hover:bg-gradient-to-br from-[rgba(105,185,164,0.3)] via-[rgba(239,244,225,0.3)] to-[rgba(255,213,108,0.3)] cursor-pointer"
         >
           <div className="flex flex-col justify-between">
