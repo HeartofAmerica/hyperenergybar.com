@@ -32,11 +32,11 @@ export default function FAQ() {
             />
           </div>
         </div>
-        <div className="wave-margin text-green z-40 relative -mb-1">
+        <div className="wave-margin text-white z-40 relative -mb-1">
           <Wave />
         </div>
       </div>
-      <div className="pb-10 sm:pb-20 bg-green">
+      <div className="pb-10 sm:pb-20">
         <div className="container max-w-screen-md px-5 lg:px-10 text-center">
           <Accordion
             title="DO HYPER SMOOTHIES HAVE CAFFEINE?"
@@ -72,7 +72,7 @@ export default function FAQ() {
           />
         </div>
       </div>
-      <div className="text-darkgreen bg-green -mb-2 lg:-mb-14 z-40">
+      <div className="text-darkgreen bg-white -mb-2 lg:-mb-14 z-40">
         <Wave/>
       </div>
       <Footer/>

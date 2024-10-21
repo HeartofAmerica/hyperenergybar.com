@@ -25,7 +25,7 @@ export default function Smoothies() {
       <div className="pb-10 lg:pb-20 bg-xltgreen">
         <div className="container max-w-screen-lg px-5 lg:px-10">
           <div className="grid lg:grid-cols-3 gap-5 lg:gap-20">
-            <Link href="/menu/smoothies/strawberry" className="card">
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/strawberry-smoothie.png"
@@ -37,9 +37,9 @@ export default function Smoothies() {
                 />
                 <div className="circle-lg bg-strawberry"></div>
               </div>
-              <h3 className="underline-btn-lg">Strawberry</h3>
-            </Link>
-            <Link href="/menu/smoothies/strawberry-banana" className="card">
+              <h3 className="obvi-2sm">Strawberry</h3>
+            </div>
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/strawberry-smoothie.png"
@@ -51,9 +51,9 @@ export default function Smoothies() {
                 />
                 <div className="circle-lg bg-strawban"></div>
               </div>
-              <h3 className="underline-btn-lg">Strawberry Banana</h3>
-            </Link>
-            <Link href="/menu/smoothies/mango" className="card">
+              <h3 className="obvi-2sm">Strawberry Banana</h3>
+            </div>
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/mango-smoothie.png"
@@ -65,9 +65,9 @@ export default function Smoothies() {
                 />
                 <div className="circle-lg bg-mango"></div>
               </div>
-              <h3 className="underline-btn-lg">Mango</h3>
-            </Link>
-            <Link href="/menu/smoothies/mango" className="card">
+              <h3 className="obvi-2sm">Mango</h3>
+            </div>
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/peach-smoothie.png"
@@ -79,8 +79,8 @@ export default function Smoothies() {
                 />
                 <div className="circle-lg bg-peach"></div>
               </div>
-              <h3 className="underline-btn-lg">Peach</h3>
-            </Link>
+              <h3 className="obvi-2sm">Peach</h3>
+            </div>
           </div>
         </div>
       </div>

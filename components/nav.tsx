@@ -75,7 +75,7 @@ export default function Nav() {
                         alt="Hyper Energy Bar Logo"
                         className="featured-img"
                       />
-                      <div className="circle"></div>
+                      <div className="circle bg-xltgreen"></div>
                     </div>
                     <h3 className="underline-btn">Hyper-Infused Energy</h3>
                   </Link>
@@ -89,7 +89,7 @@ export default function Nav() {
                         alt="Hyper Energy Bar Logo"
                         className="featured-img"
                       />
-                      <div className="circle"></div>
+                      <div className="circle bg-xltgreen"></div>
                     </div>
                     <h3 className="underline-btn">Smoothies</h3>
                   </Link>
@@ -103,7 +103,7 @@ export default function Nav() {
                         alt="Hyper Energy Bar Logo"
                         className="featured-img"
                       />
-                      <div className="circle"></div>
+                      <div className="circle bg-xltgreen"></div>
                     </div>
                     <h3 className="underline-btn">Coffee</h3>
                   </Link>
@@ -117,7 +117,7 @@ export default function Nav() {
                         alt="Hyper Energy Bar Logo"
                         className="featured-img"
                       />
-                      <div className="circle"></div>
+                      <div className="circle bg-xltgreen"></div>
                     </div>
                     <h3 className="underline-btn">Snacks</h3>
                   </Link>

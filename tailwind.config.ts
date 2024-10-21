@@ -46,6 +46,7 @@ const config: Config = {
         strawban: '#FFF2C8',
         mango: '#FFDD79',
         peach: '#FFCE8A',
+        coffee: '#EBCA9B',
         campfire: '#EBCA9B',
         butterbomber: '#F7E2C5',
         pbclutter: '#B27543',

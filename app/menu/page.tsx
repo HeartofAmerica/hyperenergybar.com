@@ -15,10 +15,6 @@ export default function Menu() {
           <h1 className="obvi-xl mb-5 lg:mb-10">
             Menu
           </h1>
-          <div className="max-w-screen-md mx-auto">
-            <p className="text-xl lg:text-2xl">
-            </p>
-          </div>
         </div>
       </div>
       <div className="bg-xltgreen pb-10 sm:pb-40">

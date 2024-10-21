@@ -106,9 +106,9 @@ export default function Home() {
               <p className="text-sm sm:text-xl mb-5 sm:mb-10 sm:mr-20">
                 While traditional coffee bars simply exist, Hyper Energy Bars® offer an energetic experience that sets us apart. Our hand-crafted coffee and infused energy drinks are designed to keep you energized and hyped throughout the day.
               </p>
-              <a href="/menu" className="btn">
+              <Link href="/menu" className="btn">
                 View Menu
-              </a>
+              </Link>
             </div>
             <div className="relative fade-element">
               <Image
@@ -157,7 +157,7 @@ export default function Home() {
                   alt="Hyper Energy Bar Hyper-Infused Energy"
                   className="featured-img"
                 />
-                <div className="circle-lg bg-ltgreen"></div>
+                <div className="circle-lg bg-xltgreen"></div>
               </div>
               <h3 className="underline-btn-lg">Hyper-Infused Energy</h3>
             </Link>
@@ -171,7 +171,7 @@ export default function Home() {
                   alt="Hyper Energy Bar Smoothies"
                   className="featured-img"
                 />
-                <div className="circle-lg bg-ltgreen"></div>
+                <div className="circle-lg bg-xltgreen"></div>
               </div>
               <h3 className="underline-btn-lg">Smoothies</h3>
             </Link>
@@ -185,7 +185,7 @@ export default function Home() {
                   alt="Hyper Energy Bar Coffee"
                   className="featured-img"
                 />
-                <div className="circle-lg bg-ltgreen"></div>
+                <div className="circle-lg bg-xltgreen"></div>
               </div>
               <h3 className="underline-btn-lg">Coffee</h3>
             </Link>

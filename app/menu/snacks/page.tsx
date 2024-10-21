@@ -25,7 +25,7 @@ export default function Snacks() {
       <div className="pb-10 lg:pb-20 bg-xltgreen">
         <div className="container max-w-screen-lg px-5 lg:px-10">
           <div className="grid lg:grid-cols-3 gap-5 lg:gap-20">
-            <Link href="/menu/snacks/chocolate-chip-muffin-tops" className="card">
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/chocolate-chip-muffin-tops.png"
@@ -37,9 +37,9 @@ export default function Snacks() {
                 />
                 <div className="circle-lg bg-ltgreen"></div>
               </div>
-              <h3 className="underline-btn-lg">Chocolate Chip Muffin Tops</h3>
-            </Link>
-            <Link href="/menu/snacks/lemon-poppy-seed-muffin-tops" className="card">
+              <h3 className="obvi-2sm">Chocolate Chip<br/> Muffin Tops</h3>
+            </div>
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/snacks.png"
@@ -51,9 +51,9 @@ export default function Snacks() {
                 />
                 <div className="circle-lg bg-ltgreen"></div>
               </div>
-              <h3 className="underline-btn-lg">Lemon Poppy Seed Muffin Tops</h3>
-            </Link>
-            <Link href="/menu/snacks/creme-brulee-muffin-tops" className="card">
+              <h3 className="obvi-2sm">Lemon Poppy Seed<br/> Muffin Tops</h3>
+            </div>
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/snacks.png"
@@ -65,8 +65,8 @@ export default function Snacks() {
                 />
                 <div className="circle-lg bg-ltgreen"></div>
               </div>
-              <h3 className="underline-btn-lg">Crème brûlée Muffin Tops</h3>
-            </Link>
+              <h3 className="obvi-2sm">Crème brûlée<br/> Muffin Tops</h3>
+            </div>
           </div>
         </div>
       </div>

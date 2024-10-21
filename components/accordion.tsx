@@ -31,9 +31,7 @@ export default function Accordion({ title, content }: AccordionProps) {
 
   return (
     <div
-      className={`bg-ltgreen rounded-xl sm:rounded-2xl shadow-lg overflow-hidden mb-3 sm:mb-6 transition-colors duration-300 ${
-        isOpen ? 'bg-white' : 'hover:bg-white'
-      }`}
+      className="bg-white border-2 border-green/25 rounded-xl sm:rounded-2xl shadow-lg overflow-hidden mb-3 sm:mb-6 transition-all duration-300 hover:border-green"
     >
       <button
         onClick={toggleAccordion}

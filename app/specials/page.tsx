@@ -41,19 +41,19 @@ export default function Specials() {
             <h3 className="text-white obvi-lg mb-10 sm:mb-20">Hyper-Infused Energy</h3>
           </div>
           <div className="grid lg:grid-cols-2 gap-5 lg:gap-10">
-            <div className="block text-center border-2 border-neon rounded-xl p-6 sm:p-12">
+            <div className="block text-center border-2 border-neon rounded-xl p-4 sm:p-8">
               <h3 className="text-neon obvi-md mb-2 sm:mb-5">Happy<br/> Glamper</h3>
               <h3 className="text-neon obvi-sm">Cranberry | Raspberry | Apple</h3>
             </div>
-            <div className="block text-center border-2 border-neon rounded-xl p-6 sm:p-12">
+            <div className="block text-center border-2 border-neon rounded-xl p-4 sm:p-8">
               <h3 className="text-neon obvi-md mb-2 sm:mb-5">Weekend Wanderer</h3>
               <h3 className="text-neon obvi-sm">Peach | Tangerine | SF Green Apple</h3>
             </div>
-            <div className="block text-center border-2 border-neon rounded-xl p-6 sm:p-12">
+            <div className="block text-center border-2 border-neon rounded-xl p-4 sm:p-8">
               <h3 className="text-neon obvi-md mb-2 sm:mb-5">Stargazer</h3>
               <h3 className="text-neon obvi-sm">Sour Candy | Blue Raspberry | Blackberry</h3>
             </div>
-            <div className="block text-center border-2 border-neon rounded-xl p-6 sm:p-12">
+            <div className="block text-center border-2 border-neon rounded-xl p-4 sm:p-8">
               <h3 className="text-neon obvi-md mb-2 sm:mb-5">Weekend Wanderer</h3>
               <h3 className="text-neon obvi-sm">Cranberry | Raspberry | Apple</h3>
             </div>
@@ -64,15 +64,15 @@ export default function Specials() {
             <h3 className="text-white obvi-lg mb-10 sm:mb-20">Coffee</h3>
           </div>
           <div className="grid lg:grid-cols-3 gap-5 lg:gap-10">
-            <div className="block text-center border-2 border-neon rounded-xl p-6 sm:p-12">
+            <div className="block text-center border-2 border-neon rounded-xl p-4 sm:p-8">
               <h3 className="text-neon obvi-md mb-2 sm:mb-5">Hikers Hotcake</h3>
               <h3 className="text-neon obvi-sm">Maple | Shortbread</h3>
             </div>
-            <div className="block text-center border-2 border-neon rounded-xl p-6 sm:p-12">
+            <div className="block text-center border-2 border-neon rounded-xl p-4 sm:p-8">
               <h3 className="text-neon obvi-md mb-2 sm:mb-5">Vanilla Bean Canteen</h3>
               <h3 className="text-neon obvi-sm">Frozen | Vanilla Bean | Milk</h3>
             </div>
-            <div className="block text-center border-2 border-neon rounded-xl p-6 sm:p-12">
+            <div className="block text-center border-2 border-neon rounded-xl p-4 sm:p-8">
               <h3 className="text-neon obvi-md mb-2 sm:mb-5">Treeline Chai</h3>
               <h3 className="text-neon obvi-sm">Pumpkin Pie</h3>
             </div>
