@@ -4,8 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Nav from '@/components/nav';
-import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
-import ContactForm from '@/components/contact';
+import ContactCap from '@/components/contact-cap';
 import Accordion from '@/components/accordion';
 import Wave from '@/components/wave';
 import Footer from '@/components/footer';
@@ -28,9 +27,7 @@ export default function Contact() {
       </div>
       <div className="bg-ltgreen pb-10 sm:pb-20">
         <div className="max-w-screen-md mx-auto px-5 lg:px-10">
-          <GoogleReCaptchaProvider reCaptchaKey="6LdqnDgqAAAAAJ4Y7G7R4XbK-zFiSn_AgDW-SOsM">
-            <ContactForm />
-          </GoogleReCaptchaProvider>
+          <ContactCap />
         </div>
       </div>
       <div className="text-green bg-ltgreen -mb-2 lg:-mb-14 z-40">
