@@ -10,7 +10,7 @@ export default function Menu() {
   return (
     <>
       <Nav/>
-      <div className="pt-36 pb-5 lg:pt-44 lg:pb-10 bg-xltgreen">
+      <div className="pt-28 pb-5 sm:pt-44 sm:pb-10 bg-xltgreen">
         <div className="container max-w-screen-lg px-5 lg:px-10 text-center">
           <h1 className="obvi-xl mb-5 lg:mb-10">
             Menu

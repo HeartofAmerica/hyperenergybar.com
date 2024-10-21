@@ -18,7 +18,7 @@ export default function Catering() {
                 Hype up your event
               </h1>
               <p className="text-sm sm:text-xl mb-5 sm:mb-10">
-                Now offering catering in the Greater Des Moines Area for everything from graduation parties and high school events to corporate meetings and weddings! Contact us and a member of our team will be in touch with you shortly.
+                Now offering catering int the Greater Des Moines Area.
               </p>
             </div>
             <Image

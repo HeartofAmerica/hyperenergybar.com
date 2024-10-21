@@ -150,11 +150,11 @@ export default function Locations() {
             </div>
             <div className="white-card">
               <Image
-                src="/assets/img/hyper-waukee.jpg"
+                src="/assets/img/hyper-west-des-moines.jpg"
                 quality={100}
                 width={720}
                 height={360}
-                alt="Hyper Energy Bar Waukee"
+                alt="Hyper Energy Bar West Des Moines"
                 className="mx-auto"
               />
               <div className="white-card-content">
