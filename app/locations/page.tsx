@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Nav from '@/components/nav';
 import Wave from '@/components/wave';
+import Map from '@/components/map';
 import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
@@ -386,6 +387,11 @@ export default function Locations() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="bg-xltgreen">
+        <div className="container max-w-screen-lg px-5 sm:px-10">
+          <Map/>
         </div>
       </div>
       <div className="text-darkgreen bg-xltgreen -mb-2 lg:-mb-14 z-40">
