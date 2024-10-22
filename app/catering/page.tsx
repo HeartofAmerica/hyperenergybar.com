@@ -143,8 +143,12 @@ export default function Catering() {
           </div>
           <div className="grid sm:grid-cols-2 gap-5">
             <div className="bg-green p-5 sm:p-10 text-center rounded-3xl">
-              <h3 className="obvi-md text-neon mb-2 sm:mb-5">Coffee</h3>
-              <h3 className="obvi-sm text-white mb-2 sm:mb-5">$30 PER Gallon [cold brew]</h3>
+              <h3 className="obvi-md text-neon mb-1 sm:mb-2">Coffee</h3>
+              <h3 className="obvi-sm text-neon mb-2 sm:mb-5">[cold brew]</h3>
+              <h3 className="obvi-sm text-white mb-1 sm:mb-2">$30 PER Gallon</h3>
+              <p className="text-xs sm:text-md mb-2 text-white sm:mx-20">
+                (includes cups, lids, and straws)
+              </p>
               <h3 className="obvi-sm text-white mb-1 sm:mb-2">ADD FLAVORS:</h3>
               <p className="text-xs sm:text-md mb-2 text-white sm:mx-20">
                 French Vanilla, Caramel, Hazelnut, or Chocolate Chip Cookie Dough

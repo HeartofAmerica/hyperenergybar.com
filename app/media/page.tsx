@@ -10,7 +10,7 @@ export default function Media() {
   return (
     <>
       <Nav/>
-      <div className="pt-36 pb-5 lg:pt-44 lg:pb-20">
+      <div className="pt-24 pb-5 lg:pt-44 lg:pb-20">
         <div className="container max-w-screen-lg px-5 lg:px-10 text-center">
           <h1 className="obvi-xl mb-5 lg:mb-10">
             The Hype
