@@ -54,8 +54,8 @@ export default function Specials() {
               <h3 className="text-neon obvi-sm">Sour Candy | Blue Raspberry | Blackberry</h3>
             </div>
             <div className="block text-center border-2 border-neon rounded-xl p-4 sm:p-8">
-              <h3 className="text-neon obvi-md mb-2 sm:mb-5">Weekend Wanderer</h3>
-              <h3 className="text-neon obvi-sm">Cranberry | Raspberry | Apple</h3>
+              <h3 className="text-neon obvi-md mb-2 sm:mb-5">Cabin Fever</h3>
+              <h3 className="text-neon obvi-sm">Pineapple | Vanilla | SF Orange</h3>
             </div>
           </div>
         </div>
