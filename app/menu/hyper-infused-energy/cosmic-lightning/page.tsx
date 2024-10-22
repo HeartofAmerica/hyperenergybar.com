@@ -52,11 +52,11 @@ export default function CosmicLightning() {
       </div>
       <div className="relative">
         <Image
-          src="/assets/img/pink-powder-featured.jpg"
+          src="/assets/img/pink-power-featured.jpg"
           quality={100}
           width={1920}
           height={1024}
-          alt="Hyper Energy Bar Pink Powder"
+          alt="Hyper Energy Bar Pink power"
           className="mx-auto"
         />
         <div className="absolute w-full top-0 z-40 text-cosmiclightning">

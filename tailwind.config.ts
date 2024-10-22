@@ -30,7 +30,7 @@ const config: Config = {
         neon: '#E8FFAF',
         yellow: '#F8D77C',
         red: '#F8D77C',
-        pinkpowder: '#FFB8B9',
+        pinkpower: '#FFB8B9',
         violetvoltage: '#A5E5F0',
         jetfuel: '#FFBFB5',
         aftershock: '#C3D9FF',

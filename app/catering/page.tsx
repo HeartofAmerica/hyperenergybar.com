@@ -58,16 +58,16 @@ export default function Catering() {
               <div className="card">
                 <div className="circle-wrap text-center">
                   <Image
-                    src="/assets/img/pink-powder.png"
+                    src="/assets/img/pink-power.png"
                     quality={100}
                     width={540}
                     height={720}
                     alt="Hyper Energy Bar Catering"
                     className="featured-img"
                   />
-                  <div className="circle bg-pinkpowder"></div>
+                  <div className="circle bg-pinkpower"></div>
                 </div>
-                <h3 className="obvi-sm">Pink Powder</h3>
+                <h3 className="obvi-sm">Pink power</h3>
               </div>
               <div className="card">
                 <div className="circle-wrap text-center">

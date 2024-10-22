@@ -26,19 +26,19 @@ export default function HyperInfusedEnergy() {
       <div className="pb-10 sm:pb-40 bg-xltgreen">
         <div className="container max-w-screen-lg px-5 lg:px-10">
           <div className="grid lg:grid-cols-3 gap-5 lg:gap-20">
-            <Link href="/menu/hyper-infused-energy/pink-powder" className="card">
+            <Link href="/menu/hyper-infused-energy/pink-power" className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
-                  src="/assets/img/pink-powder.png"
+                  src="/assets/img/pink-power.png"
                   quality={100}
                   width={540}
                   height={720}
-                  alt="Hyper Energy Bar Pink Powder"
+                  alt="Hyper Energy Bar Pink power"
                   className="featured-img"
                 />
-                <div className="circle-lg bg-pinkpowder"></div>
+                <div className="circle-lg bg-pinkpower"></div>
               </div>
-              <h3 className="underline-btn-lg">Pink Powder</h3>
+              <h3 className="underline-btn-lg">Pink power</h3>
             </Link>
             <Link href="/menu/hyper-infused-energy/violet-voltage" className="card">
               <div className="circle-wrap-lg text-center">
