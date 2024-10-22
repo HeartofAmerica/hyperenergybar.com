@@ -38,6 +38,9 @@ export default function StickerDrop() {
           <Wave />
         </div>
       </div>
+      <div className="text-darkgreen -mb-2 lg:-mb-14 z-40">
+        <Wave/>
+      </div>
       <Footer/>
     </>
   );
