@@ -82,7 +82,7 @@ export default function Nav() {
                   <Link href="/menu/smoothies" className="card pb-10 lg:pb-20">
                     <div className="circle-wrap text-center">
                       <Image
-                        src="/assets/img/lazy-river.png"
+                        src="/assets/img/strawberry-smoothie.png"
                         quality={100}
                         width={540}
                         height={720}

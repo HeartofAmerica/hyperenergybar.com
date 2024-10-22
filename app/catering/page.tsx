@@ -23,7 +23,7 @@ export default function Catering() {
                 Hype up your event
               </h1>
               <p className="text-sm sm:text-xl mb-5 sm:mb-10">
-                Now offering catering int the Greater Des Moines Area. From graduation parties and high school events to corporate meeting and weddings, Hyper is sure to hype up your event! Contact us and a member of our team will be in touch with you shortly.
+                From graduation parties and high school events to corporate meeting and weddings, Hyper is sure to hype up your event! Contact us and a member of our team will be in touch with you shortly.
               </p>
               <a href="#order-catering" className="btn-white">
                 Order Catering
