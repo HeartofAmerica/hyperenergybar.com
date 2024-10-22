@@ -34,7 +34,7 @@ export async function POST(request: Request) {
       to: 'tcain@hoari.com',
       from: 'tcain@hoari.com',
       subject: 'New Sticker Drop Submission',
-      text: `${fullName} (${email}) sent a message: ${comments}`,
+      text: `New Sticker Drop Submission from: ${fullName} ${email} Comments: ${comments}`,
       attachments: [
         {
           content: fileContent, // Use base64 content

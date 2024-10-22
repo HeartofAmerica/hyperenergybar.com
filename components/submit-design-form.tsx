@@ -1,4 +1,3 @@
-// submit-design-form.tsx
 'use client';
 
 import { useState } from 'react';
@@ -18,6 +17,19 @@ export default function SubmitDesignForm() {
     }
   };
 
+  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+  };
+
+  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+      setDesignFile(e.dataTransfer.files[0]);
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('loading');
@@ -28,15 +40,19 @@ export default function SubmitDesignForm() {
       return;
     }
 
+    if (!designFile) {
+      alert('Please upload a design file.');
+      setStatus('error');
+      return;
+    }
+
     try {
       const recaptchaToken = await executeRecaptcha('submit_design_form');
 
       const formData = new FormData();
       formData.append('fullName', fullName);
       formData.append('email', email);
-      if (designFile) {
-        formData.append('designFile', designFile);
-      }
+      formData.append('designFile', designFile); // Always append since it's validated above
       formData.append('comments', comments);
       formData.append('recaptchaToken', recaptchaToken);
 
@@ -64,7 +80,7 @@ export default function SubmitDesignForm() {
 
   return (
     <form onSubmit={handleSubmit} className="sm:grid sm:grid-cols-2 gap-5 bg-white shadow-xl rounded-3xl p-5 sm:p-10">
-      <div className="col-span-2 mb-3 sm:mb-0">
+      <div className="mb-3 sm:mb-0">
         <p className="obvi-sm mb-2">Full Name</p>
         <input
           type="text"
@@ -74,7 +90,7 @@ export default function SubmitDesignForm() {
           className="w-full px-5 py-3 rounded-lg border border-green/25 hover:border-green focus:border-green transition-all duration-300"
         />
       </div>
-      <div className="col-span-2 mb-3 sm:mb-0">
+      <div className="mb-3 sm:mb-0">
         <p className="obvi-sm mb-2">Email</p>
         <input
           type="email"
@@ -84,14 +100,24 @@ export default function SubmitDesignForm() {
           className="w-full px-5 py-3 rounded-lg border border-green/25 hover:border-green focus:border-green transition-all duration-300"
         />
       </div>
-      <div className="col-span-2 mb-3 sm:mb-0">
-        <p className="obvi-sm mb-2">Upload a Design</p>
+      <div
+        className="col-span-2 mb-3 sm:mb-0 border-2 border-dashed border-green/25 rounded-lg p-5 sm:p-10 text-center cursor-pointer hover:border-green"
+        onDragOver={handleDragOver}
+        onDrop={handleDrop}
+        onClick={() => document.getElementById('fileInput')?.click()}
+      >
+        <p className="mb-2 sm:mb-5">Drag & Drop your Design File here or</p>
+        <button type="button" className="btn mb-1 sm:mb-2">
+          Upload a File
+        </button>
+        <p className="text-sm text-black/40">25MB max file size</p>
         <input
           type="file"
+          id="fileInput"
           onChange={handleFileChange}
-          required
-          className="w-full px-5 py-3 rounded-lg border border-green/25 hover:border-green focus:border-green transition-all duration-300"
+          className="hidden" // Removed required attribute
         />
+        {designFile && <p className="mt-2">File: {designFile.name}</p>}
       </div>
       <div className="col-span-2">
         <p className="obvi-sm mb-2">Comments</p>
