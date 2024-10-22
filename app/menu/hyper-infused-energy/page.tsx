@@ -26,7 +26,7 @@ export default function HyperInfusedEnergy() {
       <div className="pb-10 sm:pb-40 bg-xltgreen">
         <div className="container max-w-screen-lg px-5 lg:px-10">
           <div className="grid lg:grid-cols-3 gap-5 lg:gap-20">
-            <Link href="/menu/hyper-infused-energy/pink-power" className="card">
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/pink-power.png"
@@ -38,9 +38,10 @@ export default function HyperInfusedEnergy() {
                 />
                 <div className="circle-lg bg-pinkpower"></div>
               </div>
-              <h3 className="underline-btn-lg">Pink power</h3>
-            </Link>
-            <Link href="/menu/hyper-infused-energy/violet-voltage" className="card">
+              <h3 className="obvi-2sm">Pink power</h3>
+              <h3 className="obvi-sm">STRAWBERRY | WATERMELON | WHITE CHOCOLATE *</h3>
+            </div>
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/violet-voltage.png"
@@ -52,9 +53,10 @@ export default function HyperInfusedEnergy() {
                 />
                 <div className="circle-lg bg-violetvoltage"></div>
               </div>
-              <h3 className="underline-btn-lg">Violet Voltage</h3>
-            </Link>
-            <Link href="/menu/hyper-infused-energy/jet-fuel" className="card">
+              <h3 className="obvi-2sm">Violet Voltage</h3>
+              <h3 className="obvi-sm">BLUE RASPBERRY | WATERMELON *</h3>
+            </div>
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/jet-fuel.png"
@@ -66,9 +68,10 @@ export default function HyperInfusedEnergy() {
                 />
                 <div className="circle-lg bg-jetfuel"></div>
               </div>
-              <h3 className="underline-btn-lg">Jet Fuel</h3>
-            </Link>
-            <Link href="/menu/hyper-infused-energy/aftershock" className="card">
+              <h3 className="obvi-2sm">Jet Fuel</h3>
+              <h3 className="obvi-sm">WATERMELON | PEACH | MANGO *</h3>
+            </div>
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/aftershock.png"
@@ -80,9 +83,10 @@ export default function HyperInfusedEnergy() {
                 />
                 <div className="circle-lg bg-aftershock"></div>
               </div>
-              <h3 className="underline-btn-lg">Aftershock</h3>
-            </Link>
-            <Link href="/menu/hyper-infused-energy/adrenaline-junkie" className="card">
+              <h3 className="obvi-2sm">Aftershock</h3>
+              <h3 className="obvi-sm">Blue Raspberry | Pomegranate *</h3>
+            </div>
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/adrenaline-junkie.png"
@@ -94,9 +98,10 @@ export default function HyperInfusedEnergy() {
                 />
                 <div className="circle-lg bg-adrenalinejunkie"></div>
               </div>
-              <h3 className="underline-btn-lg">Adrenaline Junkie</h3>
-            </Link>
-            <Link href="/menu/hyper-infused-energy/electric-wave" className="card">
+              <h3 className="obvi-2sm">Adrenaline Junkie</h3>
+              <h3 className="obvi-sm">Blue Raspberry *</h3>
+            </div>
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/electric-wave.png"
@@ -108,9 +113,10 @@ export default function HyperInfusedEnergy() {
                 />
                 <div className="circle-lg bg-electricwave"></div>
               </div>
-              <h3 className="underline-btn-lg">Electric Wave</h3>
-            </Link>
-            <Link href="/menu/hyper-infused-energy/cosmic-lightning" className="card">
+              <h3 className="obvi-2sm">Electric Wave</h3>
+              <h3 className="obvi-sm">BLUE RASPBERRY | WHITE CHOCOLATE *</h3>
+            </div>
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/cosmic-lightning.png"
@@ -122,9 +128,10 @@ export default function HyperInfusedEnergy() {
                 />
                 <div className="circle-lg bg-cosmiclightning"></div>
               </div>
-              <h3 className="underline-btn-lg">Cosmic Lightning</h3>
-            </Link>
-            <Link href="/menu/hyper-infused-energy/triple-threat" className="card">
+              <h3 className="obvi-2sm">Cosmic Lightning</h3>
+              <h3 className="obvi-sm">Peach | Mango | Pineapple *</h3>
+            </div>
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/triple-threat.png"
@@ -136,9 +143,10 @@ export default function HyperInfusedEnergy() {
                 />
                 <div className="circle-lg bg-triplethreat"></div>
               </div>
-              <h3 className="underline-btn-lg">Triple Threat</h3>
-            </Link>
-            <Link href="/menu/hyper-infused-energy/dynamite" className="card">
+              <h3 className="obvi-2sm">Triple Threat</h3>
+              <h3 className="obvi-sm">Green Apple | Blue Raspberry | White Chocolate</h3>
+            </div>
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/dynamite.png"
@@ -150,9 +158,10 @@ export default function HyperInfusedEnergy() {
                 />
                 <div className="circle-lg bg-dynamite"></div>
               </div>
-              <h3 className="underline-btn-lg">Dynamite</h3>
-            </Link>
-            <Link href="/menu/hyper-infused-energy/kinetic-coconut" className="card">
+              <h3 className="obvi-2sm">Dynamite</h3>
+              <h3 className="obvi-sm">Strawberry | Orange | White Chocolate *</h3>
+            </div>
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/kinetic-coconut.png"
@@ -164,9 +173,10 @@ export default function HyperInfusedEnergy() {
                 />
                 <div className="circle-lg bg-kineticcoconut"></div>
               </div>
-              <h3 className="underline-btn-lg">Kinetic Coconut</h3>
-            </Link>
-            <Link href="/menu/hyper-infused-energy/screamin-green" className="card">
+              <h3 className="obvi-2sm">Kinetic Coconut</h3>
+              <h3 className="obvi-sm">Blue Raspberry | Coconut *</h3>
+            </div>
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/screamin-green.png"
@@ -178,9 +188,10 @@ export default function HyperInfusedEnergy() {
                 />
                 <div className="circle-lg bg-screamingreen"></div>
               </div>
-              <h3 className="underline-btn-lg">Screamin' Green</h3>
-            </Link>
-            <Link href="/menu/hyper-infused-energy/solar-strawberry" className="card">
+              <h3 className="obvi-2sm">Screamin' Green</h3>
+              <h3 className="obvi-sm">GREEN APPLE | PINEAPPLE | WHITE CHOCOLATE</h3>
+            </div>
+            <div className="card">
               <div className="circle-wrap-lg text-center">
                 <Image
                   src="/assets/img/solar-strawberry.png"
@@ -192,8 +203,9 @@ export default function HyperInfusedEnergy() {
                 />
                 <div className="circle-lg bg-solarstrawberry"></div>
               </div>
-              <h3 className="underline-btn-lg">Solar Strawberry</h3>
-            </Link>
+              <h3 className="obvi-2sm">Solar Strawberry</h3>
+              <h3 className="obvi-sm">Strawberry | Almond | White Chocolate *</h3>
+            </div>
           </div>
         </div>
       </div>
