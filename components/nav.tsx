@@ -125,7 +125,7 @@ export default function Nav() {
               </li>
               <li className={pathname === '/specials' ? 'active' : ''}>
                 <Link href="/specials" className="underline-btn">
-                  Specials
+                  Seasonal
                 </Link>
               </li>
               <li className={pathname === '/locations' ? 'active' : ''}>
@@ -205,7 +205,7 @@ export default function Nav() {
                 </li>
                 <li className={pathname === '/specials' ? 'active' : 'my-5'}>
                   <Link href="/specials" className="underline-btn-lg">
-                    Specials
+                    Seasonal
                   </Link>
                 </li>
                 <li className={pathname === '/locations' ? 'active' : 'my-5'}>
