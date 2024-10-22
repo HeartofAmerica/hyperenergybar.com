@@ -52,7 +52,7 @@ export default function SubmitDesignForm() {
       const formData = new FormData();
       formData.append('fullName', fullName);
       formData.append('email', email);
-      formData.append('designFile', designFile); // Always append since it's validated above
+      formData.append('designFile', designFile);
       formData.append('comments', comments);
       formData.append('recaptchaToken', recaptchaToken);
 
@@ -110,7 +110,7 @@ export default function SubmitDesignForm() {
         <button type="button" className="btn mb-1 sm:mb-2">
           Upload a File
         </button>
-        <p className="text-sm text-black/40">25MB max file size</p>
+        <p className="text-sm text-black/40">4MB max file size</p>
         <input
           type="file"
           id="fileInput"
@@ -131,12 +131,12 @@ export default function SubmitDesignForm() {
         <button
           type="submit"
           disabled={status === 'loading'}
-          className={`px-10 py-3 rounded-lg ${status === 'loading' ? '' : 'btn'}`}
+          className={`px-10 py-3 rounded-lg btn ${status === 'loading' ? 'opacity-50 cursor-not-allowed' : ''}`}
         >
           {status === 'loading' ? 'Submitting...' : 'Submit Design'}
         </button>
         {status === 'success' && <p className="text-green-600 mt-2">Design submitted successfully!</p>}
-        {status === 'error' && <p className="text-red-600 mt-2">Error submitting design. Please try again.</p>}
+        {status === 'error' && <p className="text-red-600 mt-2">Error submitting design.</p>}
       </div>
     </form>
   );
