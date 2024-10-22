@@ -1,11 +1,15 @@
-'use client';
-
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Nav from '@/components/nav';
 import Wave from '@/components/wave';
 import SubmitDesignComponent from '@/components/submit-design-cap';
 import Footer from '@/components/footer';
+
+export const metadata: Metadata = {
+  title: "Hyper Energy Bar | Sticker Drop",
+  description: "Hyper Energy Bar | Sticker Drop",
+};
 
 export default function StickerDrop() {
   return (

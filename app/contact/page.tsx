@@ -1,13 +1,14 @@
-'use client';
-
-import { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import { Metadata } from 'next';
 import Nav from '@/components/nav';
 import ContactCap from '@/components/contact-cap';
 import Accordion from '@/components/accordion';
 import Wave from '@/components/wave';
 import Footer from '@/components/footer';
+
+export const metadata: Metadata = {
+  title: "Hyper Energy Bar | Contact Us",
+  description: "Hyper Energy Bar | Contact Us",
+};
 
 export default function Contact() {
   return (

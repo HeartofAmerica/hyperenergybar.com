@@ -1,10 +1,14 @@
-'use client';
-
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Nav from '@/components/nav';
 import Wave from '@/components/wave';
 import Footer from '@/components/footer';
+
+export const metadata: Metadata = {
+  title: "Hyper Energy Bar | Coffee Menu",
+  description: "Hyper Energy Bar | Coffee Menu",
+};
 
 export default function Coffee() {
   return (

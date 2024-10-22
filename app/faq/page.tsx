@@ -1,11 +1,15 @@
-'use client';
-
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Nav from '@/components/nav';
 import Wave from '@/components/wave';
 import Accordion from '@/components/accordion';
 import Footer from '@/components/footer';
+
+export const metadata: Metadata = {
+  title: "Hyper Energy Bar | FAQs",
+  description: "Hyper Energy Bar | FAQs",
+};
 
 export default function FAQ() {
   return (
