@@ -33,7 +33,7 @@ export async function POST(request: Request) {
 
     const emailData = {
       to: 'tcain@hoari.com',
-      from: 'tcain@hoari.com',
+      from: 'careers@hyperenergybar.com',
       subject: `New Job Application from ${firstName} ${lastName} for ${position}`,
       text: `First Name: ${firstName}\n` +
             `Last Name: ${lastName}\n` +

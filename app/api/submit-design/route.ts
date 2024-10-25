@@ -58,7 +58,7 @@ export async function POST(request: Request) {
     // Set up email data
     const emailData = {
       to: 'tcain@hoari.com',
-      from: 'tcain@hoari.com',
+      from: 'sticker-drop@hyperenergybar.com',
       subject: 'New Job Application Submission',
       text: emailContent,
       attachments: [
