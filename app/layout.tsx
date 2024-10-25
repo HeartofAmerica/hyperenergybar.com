@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "../public/assets/css/styles.css";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Hyper Energy Bar",
@@ -16,6 +17,19 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/sbg8hhu.css"/>
         <link rel="icon" href="/assets/img/favicon.png" type="image/png" />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-JHWD910RQW"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-JHWD910RQW');
+          `}
+        </Script>
       </head>
       <body>{children}</body>
     </html>

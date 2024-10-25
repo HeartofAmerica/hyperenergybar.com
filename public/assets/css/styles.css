@@ -9,10 +9,6 @@
   --darkgreen: #265B61;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 input:focus,
 textarea:focus,
 select:focus {

@@ -108,6 +108,11 @@ export default function Footer() {
                       Sticker Drop
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/careers" className="obvi-sm text-white hover:text-green trasition-all duration-300 mb-5">
+                      Careers
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
