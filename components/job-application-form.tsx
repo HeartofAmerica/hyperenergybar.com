@@ -267,7 +267,7 @@ export default function JobApplicationForm() {
         </button>
         {status === 'loading' && <p>Submitting your application...</p>}
         {status === 'success' && <p>Your application has been submitted successfully!</p>}
-        {status === 'error' && <p>There was an error submitting your application. Please try again.</p>}
+        {status === 'error' && <p>There was an error submitting your application. Please email hello@hyperenergybar.com for support.</p>}
       </div>
     </form>
   );

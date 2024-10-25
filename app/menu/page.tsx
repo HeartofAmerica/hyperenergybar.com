@@ -41,7 +41,7 @@ export default function Menu() {
             <Link href="/menu/smoothies" className="card group">
               <div className="circle-wrap-lg text-center">
                 <Image
-                  src="/assets/img/lazy-river.png"
+                  src="/assets/img/strawberry-smoothie.png"
                   quality={100}
                   width={540}
                   height={720}
