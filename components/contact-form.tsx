@@ -109,6 +109,8 @@ export default function ContactForm() {
           <option value="Urbandale">Urbandale</option>
           <option value="Waukee">Waukee</option>
           <option value="West Des Moines">West Des Moines</option>
+          <option value="Corporate">Corporate</option>
+          <option value="Partnership/Donation Request">Partnership/Donation Request</option>
         </select>
       </div>
       <div className="col-span-2">
@@ -131,7 +133,7 @@ export default function ContactForm() {
       </div>
       {status === 'loading' && <p className="col-span-2 text-gray-500">Sending...</p>}
       {status === 'success' && <p className="col-span-2 text-green-500">Message sent!</p>}
-      {status === 'error' && <p className="col-span-2 text-red-500">Error, try again.</p>}
+      {status === 'error' && <p className="col-span-2 text-red-500">Error, message not sent.</p>}
     </form>
   );
 }
