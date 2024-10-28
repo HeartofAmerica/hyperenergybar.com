@@ -18,14 +18,14 @@ export default function StickerDrop() {
       <div className="hero-gradient-1 relative overflow-hidden">
         <div className="container max-w-screen-xl">
           <div className="sm:grid sm:grid-cols-2 sm:gap-10 sm:flex items-center">
-            <div className="pt-28 sm:pt-10 sm:pb-20 mx-5 sm:mx-10 py-10">
+            <div className="py-28 mx-5 sm:mx-10">
               <h1 className="obvi-xl mb-5 sm:mb-10">
                 Sticker Drop
               </h1>
-              <p className="text-sm sm:text-xl mb-5 sm:mb-10">
+              <p className="text-sm sm:text-xl mb-2 sm:mb-5">
                 Every first of the month we hand out a new limited sticker design to every customer that purchases a drink until supplies runs out. We figured this could be a great opportunity to give our customers the opportunity to contribute something to Hyper—so, we are accepting sticker design submissions from our customers!
               </p>
-              <a href="#submit-a-design" className="btn-white mr-2">
+              <a href="#submit-a-design" className="btn-white mr-2 mb-2 inline-block">
                 Submit a design
               </a>
               <a href="https://hyperenergybar.myshopify.com/" target="_blank" className="btn">
