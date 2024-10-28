@@ -45,9 +45,12 @@ export async function POST(request: Request) {
       Additional Comments: ${comments || 'None'}
     `;
 
-    // Set up email data
+    // Set up email data with multiple recipients
     const emailData = {
-      to: 'tcain@hoari.com',
+      to: [
+        'tcain@hoari.com',
+        'jkeaty@hoari.com',
+      ],
       from: 'sticker-drop@hyperenergybar.com',
       subject: 'New Sticker Design Submission',
       text: emailContent,

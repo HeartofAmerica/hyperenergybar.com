@@ -79,7 +79,7 @@ export default function Snacks() {
                   className="rounded-full"
                 />
               </div>
-              <h3 className="obvi-2sm mt-2">Chocolate<br/> Cake Pop</h3>
+              <h3 className="obvi-2sm mt-2">Cosmic Brownie<br/> Cake Pop</h3>
             </div>
             <div className="card">
               <div className="text-center">
@@ -92,7 +92,7 @@ export default function Snacks() {
                   className="rounded-full"
                 />
               </div>
-              <h3 className="obvi-2sm mt-2">Pink<br/> Cake Pop</h3>
+              <h3 className="obvi-2sm mt-2">Birthday Cake<br/> Pop</h3>
             </div>
           </div>
         </div>

@@ -6,15 +6,15 @@ sendgrid.setApiKey(process.env.SENDGRID_API_KEY as string);
 
 // Mapping of locations to email recipients
 const locationEmailMap: { [key: string]: string[] } = {
-  'Altoona': ['tcain0614@gmail.com', 'taylor@tcain.io'],
-  'Ankeny': ['tcain0614@gmail.com', 'taylor@tcain.io'],
-  'Grimes': ['tcain0614@gmail.com', 'taylor@tcain.io'],
-  'Iowa City': ['tcain0614@gmail.com', 'taylor@tcain.io'],
-  'Urbandale': ['tcain0614@gmail.com', 'taylor@tcain.io'],
-  'Waukee': ['tcain0614@gmail.com', 'taylor@tcain.io'],
-  'West Des Moines': ['tcain0614@gmail.com', 'taylor@tcain.io'],
-  'Corporate': ['tcain0614@gmail.com', 'tcain0614@gmail.com'],
-  'Partnership/Donation Request': ['tcain0614@gmail.com', 'tcain0614@gmail.com'],
+  'Altoona': ['tcain@hoari.com', 'cwood@hoari.com', 'bwillson@hoari.com'],
+  'Ankeny': ['tcain@hoari.com', 'jhance@hoari.com'],
+  'Grimes': ['tcain@hoari.com', 'kgustin@hoari.com', 'cwood@hoari.com', 'cwhalen@hoari.com'],
+  'Iowa City': ['tcain@hoari.com', 'hmartin@hoari.com'],
+  'Urbandale': ['tcain@hoari.com', 'cwhalen@hoari.com', 'cwood@hoari.com', 'jhance@hoari.com'],
+  'Waukee': ['tcain@hoari.com', 'aeslick@hoari.com', 'cwood@hoari.com', 'cwhalen@hoari.com', 'sengle@hoari.com'],
+  'West Des Moines': ['tcain@hoari.com', 'sengle@hoari.com', 'cwood@hoari.com', 'cwhalen@hoari.com'],
+  'Corporate': ['tcain@hoari.com', 'cwhalen@hoari.com', 'cwood@hoari.com'],
+  'Partnership/Donation Request': ['tcain@hoari.com', 'jkeaty@hoari.com', 'cwood@hoari.com', 'cwhalen@hoari.com'],
 };
 
 export async function POST(request: Request) {
