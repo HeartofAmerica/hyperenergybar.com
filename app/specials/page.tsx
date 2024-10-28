@@ -89,7 +89,7 @@ export default function Specials() {
         width={1440}
         height={667}
         alt="Hyper Energy Bar Catering"
-        className="w-full z-10 bg-forrest -mb-10"
+        className="w-full z-10 bg-forrest -mb-10 sm:-mb-36"
       />
       <div className="text-green bg-forrest z-40">
         <Wave/>
