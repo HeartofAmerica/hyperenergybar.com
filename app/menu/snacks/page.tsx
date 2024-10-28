@@ -30,46 +30,69 @@ export default function Snacks() {
         <div className="container max-w-screen-lg px-5 lg:px-10">
           <div className="grid lg:grid-cols-3 gap-5 lg:gap-20">
             <div className="card">
-              <div className="circle-wrap-lg text-center">
+              <div className="text-center">
                 <Image
-                  src="/assets/img/chocolate-chip-muffin-tops.png"
+                  src="/assets/img/snacks-chocolate-chip-muffin-top.jpg"
                   quality={100}
-                  width={540}
+                  width={720}
                   height={720}
                   alt="Hyper Energy Bar Chocolate Chip Muffin Tops"
-                  className="featured-img"
+                  className="rounded-full"
                 />
-                <div className="circle-lg bg-ltgreen"></div>
               </div>
               <h3 className="obvi-2sm">Chocolate Chip<br/> Muffin Tops</h3>
             </div>
             <div className="card">
-              <div className="circle-wrap-lg text-center">
+              <div className="text-center">
                 <Image
-                  src="/assets/img/snacks.png"
+                  src="/assets/img/snacks-lemon-poppy-seed-muffin-top.jpg"
                   quality={100}
-                  width={540}
+                  width={720}
                   height={720}
-                  alt="Hyper Energy Bar Chocolate Chip Muffin Tops"
-                  className="featured-img"
+                  alt="Hyper Energy Bar Lemon Poppy Seed Muffin Tops"
+                  className="rounded-full"
                 />
-                <div className="circle-lg bg-ltgreen"></div>
               </div>
               <h3 className="obvi-2sm">Lemon Poppy Seed<br/> Muffin Tops</h3>
             </div>
             <div className="card">
-              <div className="circle-wrap-lg text-center">
+              <div className="text-center">
                 <Image
-                  src="/assets/img/snacks.png"
+                  src="/assets/img/snacks-creme-brulee-muffin-top.jpg"
                   quality={100}
-                  width={540}
+                  width={720}
                   height={720}
-                  alt="Hyper Energy Bar Crème brûlée Muffin Tops"
-                  className="featured-img"
+                  alt="Hyper Energy Bar Crème Brûlée Muffin Tops"
+                  className="rounded-full"
                 />
-                <div className="circle-lg bg-ltgreen"></div>
               </div>
-              <h3 className="obvi-2sm">Crème brûlée<br/> Muffin Tops</h3>
+              <h3 className="obvi-2sm">Crème Brûlée<br/> Muffin Tops</h3>
+            </div>
+            <div className="card">
+              <div className="text-center">
+                <Image
+                  src="/assets/img/snacks-chocolate-cake-pop.jpg"
+                  quality={100}
+                  width={720}
+                  height={720}
+                  alt="Hyper Energy Bar Cake Pops"
+                  className="rounded-full"
+                />
+              </div>
+              <h3 className="obvi-2sm">Chocolate<br/> Cake Pop</h3>
+            </div>
+            <div className="card">
+              <div className="text-center">
+                <Image
+                  src="/assets/img/snacks-pink-cake-pop.jpg"
+                  quality={100}
+                  width={720}
+                  height={720}
+                  alt="Hyper Energy Bar Cake Pops"
+                  className="rounded-full"
+                />
+              </div>
+              <h3 className="obvi-2sm">Pink<br/> Cake Pop</h3>
             </div>
           </div>
         </div>

@@ -142,7 +142,7 @@ export default function Home() {
             </h2>
             <div className="max-w-screen-sm mx-auto">
               <p className="text-sm sm:text-xl mb-5 sm:mb-10">
-                Whether you’re looking for a refreshing energy drink to kickstart your day, a delicious smoothie packed with nutrients, or a rich cup of hand-crafted coffee to savor, we have something for everyone. Discover the perfect drink to fuel your active lifestyle!
+                Discover over 100 unique flavor combos with your choice of a caffeine or Italian soda base. Plus, explore our delicious sugar-free options!
               </p>
             </div>
           </div>
