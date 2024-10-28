@@ -32,8 +32,11 @@ export default function Media() {
                 <h1 className="obvi-md text-ltgreen mb-5 sm:mb-10">
                   The Hype is coming to Iowa City
                 </h1>
-                <p className="text-white text-sm sm:text-md mb-5 sm:mb-10">
-                  We’re a young brand but our roots run deep. Our craft is firmly rooted in hospitality and genuine quality. Our love of providing the best flavors and the best service led us on our journey to create Hyper Energy Bar®.
+                <p className="text-white text-sm sm:text-md mb-1">
+                  The rumors are true...Hyper is coming to Iowa City this Fall!
+                </p>
+                <p className="text-white text-sm sm:text-md">
+                  Pedestrian Mall | 115 E College Street, Iowa City
                 </p>
               </div>
               <Image
