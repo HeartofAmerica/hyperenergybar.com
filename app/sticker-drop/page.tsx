@@ -23,7 +23,7 @@ export default function StickerDrop() {
                 Sticker Drop
               </h1>
               <p className="text-sm sm:text-xl mb-5 sm:mb-10">
-                Every first of the month we hand out a new limited sticker design to every customer that purchases a drink until supplies runs out.
+                Every first of the month we hand out a new limited sticker design to every customer that purchases a drink until supplies runs out. We figured this could be a great opportunity to give our customers the opportunity to contribute something to Hyper—so, we are accepting sticker design submissions from our customers!
               </p>
               <a href="#submit-a-design" className="btn-white mr-2">
                 Submit a design
