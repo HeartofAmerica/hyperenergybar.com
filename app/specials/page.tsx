@@ -91,7 +91,7 @@ export default function Specials() {
         alt="Hyper Energy Bar Catering"
         className="w-full z-10 bg-forrest"
       />
-      <div className="text-green bg-forrest -mb-2 lg:-mb-14 z-40 -mt-12 lg:-mt-36">
+      <div className="text-green bg-forrest -mb-4 lg:-mb-14 z-40 -mt-12 lg:-mt-36">
         <Wave/>
       </div>
       <div className="py-10 lg:py-20 bg-green">
