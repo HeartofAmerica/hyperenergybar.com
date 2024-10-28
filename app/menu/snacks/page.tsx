@@ -40,7 +40,7 @@ export default function Snacks() {
                   className="rounded-full"
                 />
               </div>
-              <h3 className="obvi-2sm">Chocolate Chip<br/> Muffin Tops</h3>
+              <h3 className="obvi-2sm mt-2">Chocolate Chip<br/> Muffin Tops</h3>
             </div>
             <div className="card">
               <div className="text-center">
@@ -53,7 +53,7 @@ export default function Snacks() {
                   className="rounded-full"
                 />
               </div>
-              <h3 className="obvi-2sm">Lemon Poppy Seed<br/> Muffin Tops</h3>
+              <h3 className="obvi-2sm mt-2">Lemon Poppy Seed<br/> Muffin Tops</h3>
             </div>
             <div className="card">
               <div className="text-center">
@@ -66,7 +66,7 @@ export default function Snacks() {
                   className="rounded-full"
                 />
               </div>
-              <h3 className="obvi-2sm">Crème Brûlée<br/> Muffin Tops</h3>
+              <h3 className="obvi-2sm mt-2">Crème Brûlée<br/> Muffin Tops</h3>
             </div>
             <div className="card">
               <div className="text-center">
@@ -79,7 +79,7 @@ export default function Snacks() {
                   className="rounded-full"
                 />
               </div>
-              <h3 className="obvi-2sm">Chocolate<br/> Cake Pop</h3>
+              <h3 className="obvi-2sm mt-2">Chocolate<br/> Cake Pop</h3>
             </div>
             <div className="card">
               <div className="text-center">
@@ -92,7 +92,7 @@ export default function Snacks() {
                   className="rounded-full"
                 />
               </div>
-              <h3 className="obvi-2sm">Pink<br/> Cake Pop</h3>
+              <h3 className="obvi-2sm mt-2">Pink<br/> Cake Pop</h3>
             </div>
           </div>
         </div>
