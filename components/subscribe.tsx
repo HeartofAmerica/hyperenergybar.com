@@ -53,7 +53,7 @@ const Subscribe = () => {
         >
           <option value="">Location</option>
           <option value="Altoona">Altoona</option>
-          <option value="Akeny">Akeny</option>
+          <option value="Ankeny">Ankeny</option>
           <option value="Grimes">Grimes</option>
           <option value="Iowa City">Iowa City</option>
           <option value="Urbandale">Urbandale</option>

@@ -54,10 +54,16 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Failed reCAPTCHA verification', details: recaptchaResult }, { status: 400 });
     }
 
+    // Prepare multiple recipients
+    const recipients = [
+      'tcain@hoari.com',
+      'cwhalen@hoari.com'
+    ];
+
     // Send the email using SendGrid
     await sendgrid.send({
-      to: 'tcain@hoari.com',
-      from: 'tcain@hoari.com',
+      to: recipients,  // Multiple recipients as an array
+      from: 'catering@hyperenergybar.com',  // Sender address
       subject: `Catering Request from ${firstName} ${lastName}`,
       html: `
         <p><strong>First Name:</strong> ${firstName}</p>
