@@ -72,9 +72,9 @@ const Subscribe = () => {
         </button>
       </div>
       <div className="block">
-        {status === 'loading' && <p className="mt-4 text-white">Sending...</p>}
+        {status === 'loading' && <p className="mt-4 text-white">Subscribing...</p>}
         {status === 'success' && <p className="mt-4 text-white">Subscribed!</p>}
-        {status === 'error' && <p className="mt-4 text-white">Error, try again.</p>}
+        {status === 'error' && <p className="mt-4 text-white">Error. Not Subscribed.</p>}
       </div>
     </form>
   );
