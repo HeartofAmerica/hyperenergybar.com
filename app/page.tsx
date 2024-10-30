@@ -318,6 +318,7 @@ export default function Home() {
         <Wave/>
       </div>
       <Footer/>
+      
     </>
   );
 }
