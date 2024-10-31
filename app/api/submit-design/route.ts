@@ -49,7 +49,7 @@ export async function POST(request: Request) {
     const emailData = {
       to: [
         'tcain@hoari.com',
-        'jkeaty@hoari.com',
+        'graphics@hoari.com',
       ],
       from: 'sticker-drop@hyperenergybar.com',
       subject: 'New Sticker Design Submission',

@@ -57,7 +57,7 @@ export async function POST(request: Request) {
     // Prepare multiple recipients
     const recipients = [
       'tcain@hoari.com',
-      'cwhalen@hoari.com'
+      'iwhalen@hoari.com'
     ];
 
     // Send the email using SendGrid
