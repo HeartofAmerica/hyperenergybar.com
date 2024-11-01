@@ -8,6 +8,16 @@ const nextConfig = {
           destination: '/menu/coffee',
           permanent: false,
         },
+        {
+          source: '/fall-specials',
+          destination: '/specials',
+          permanent: false,
+        },
+        {
+          source: '/review-us',
+          destination: '/locations',
+          permanent: false,
+        },
       ];
     },
   };
